@@ -22,8 +22,8 @@ jobs:
         run: |
           echo "--- Searching for repositories with topic: $TOPIC_NAME ---"
           
-          # 1. リポジトリ一覧を取得 (nameWithOwner を使用)
-          REPOS=$(gh search repos --topic "$TOPIC_NAME" --json nameWithOwner -q '.[].nameWithOwner')
+          # 1. 検索時は 'fullName' を使用してリストを取得
+          REPOS=$(gh search repos --topic "$TOPIC_NAME" --json fullName -q '.[].fullName')
 
           if [ -z "$REPOS" ]; then
             echo "::error::No repositories found with topic: $TOPIC_NAME"
@@ -37,7 +37,8 @@ jobs:
             OWNER=${REPO%/*}
             NAME=${REPO#*/}
 
-            # 2. GraphQLクエリ (fullName を nameWithOwner に修正)
+            # 2. GraphQLクエリ (ここでは 'nameWithOwner' を使用)
+            # ブランチ(refs)、最新コミット、リリース情報を取得
             QUERY='
             query($owner:String!, $name:String!) {
               repository(owner:$owner, name:$name) {
@@ -71,14 +72,15 @@ jobs:
               }
             }'
 
-            # API実行結果を一時ファイルに保存
-            # repository フィールドの中身だけを抽出してマージ
+            # API実行結果を抽出して一時保存
             gh api graphql -f query="$QUERY" -f owner="$OWNER" -f name="$NAME" \
               --jq '.data.repository' > single_repo.json
 
-            # 3. JSONが空でないか確認してマージ
+            # 3. JSONが正しく取得できていればマージ
             if [ -s single_repo.json ] && [ "$(cat single_repo.json)" != "null" ]; then
               jq ". += [$(cat single_repo.json)]" edbp_data.json > temp.json && mv temp.json edbp_data.json
+            else
+              echo "Warning: Could not fetch details for $REPO"
             fi
           done
 
@@ -89,4 +91,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add edbp_data.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update edbp-plugin info: $(date +'%Y-%m-%d')" && git push)
+          # 差分がある場合のみコミット
+          if ! git diff --cached --exit-code; then
+            git commit -m "Update edbp-plugin info: $(date +'%Y-%m-%d')"
+            git push
+          else
+            echo "No changes to commit"
+          fi

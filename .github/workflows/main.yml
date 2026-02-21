@@ -37,8 +37,7 @@ jobs:
             OWNER=${REPO%/*}
             NAME=${REPO#*/}
 
-            # 2. GraphQLクエリ (ここでは 'nameWithOwner' を使用)
-            # ブランチ(refs)、最新コミット、リリース情報を取得
+            # 2. GraphQLクエリ (星の数、フォーク数、ウォッチ数などを追加)
             QUERY='
             query($owner:String!, $name:String!) {
               repository(owner:$owner, name:$name) {
@@ -46,6 +45,16 @@ jobs:
                 url
                 description
                 stargazerCount
+                forkCount
+                watchers {
+                  totalCount
+                }
+                primaryLanguage {
+                  name
+                }
+                createdAt
+                updatedAt
+                pushedAt
                 refs(refPrefix: "refs/heads/", first: 50) {
                   nodes {
                     name
@@ -67,6 +76,7 @@ jobs:
                     tagName
                     name
                     publishedAt
+                    description
                   }
                 }
               }
@@ -91,7 +101,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add edbp_data.json
-          # 差分がある場合のみコミット
           if ! git diff --cached --exit-code; then
             git commit -m "Update edbp-plugin info: $(date +'%Y-%m-%d')"
             git push

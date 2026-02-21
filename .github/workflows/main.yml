@@ -1,79 +1,95 @@
-name: Save Topic Repository Info
+name: Export EDBP Plugin Data
 
 on:
-  workflow_dispatch: # 手動実行用
+  workflow_dispatch: # 手動実行ボタンを表示
   schedule:
-    - cron: '0 0 * * 1' # 毎週月曜日に実行（任意）
+    - cron: '0 0 * * *' # 毎日午前0時に自動更新（任意）
 
 jobs:
-  collect-data:
+  build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # データをリポジトリに書き込むために必要
 
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Fetch Topic Data
+      - name: Fetch and Process Data
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TOPIC: "edbp-plugin"
-          ORG: "your-org-name" # 自分のユーザー名または組織名に変更
+          TOPIC_NAME: "edbp-plugin"
         run: |
-          echo "Fetching repositories with topic: $TOPIC"
+          echo "--- Searching for repositories with topic: $TOPIC_NAME ---"
           
-          # 1. 指定したトピックを持つリポジトリ一覧を取得
-          repos=$(gh repo list $ORG --topic $TOPIC --json nameWithOwner -q '.[].nameWithOwner')
+          # 1. トピックを持つリポジトリを検索 (fullNameのみ抽出)
+          # search repos を使うことで組織を問わず検索可能
+          REPOS=$(gh search repos --topic "$TOPIC_NAME" --json fullName -q '.[].fullName')
 
-          echo "[]" > all_data.json
+          if [ -z "$REPOS" ]; then
+            echo "::error::No repositories found with topic: $TOPIC_NAME"
+            exit 1
+          fi
 
-          for repo in $repos; do
-            echo "Processing $repo..."
+          # 空のJSON配列を作成
+          echo "[]" > edbp_data.json
 
-            # 2. ブランチ、コミット、リリース情報を一括取得
-            # ※GraphQLを使用するとより詳細に、効率よく取得可能です
-            repo_data=$(gh api graphql -f query='
-              query($owner:String!, $name:String!) {
-                repository(owner:$owner, name:$name) {
-                  name
-                  url
-                  refs(refPrefix: "refs/heads/", first: 50) {
-                    nodes {
-                      name
-                      target {
-                        ... on Commit {
-                          oid
-                          message
-                          committedDate
+          for REPO in $REPOS; do
+            echo "Processing: $REPO"
+            OWNER=${REPO%/*}
+            NAME=${REPO#*/}
+
+            # 2. GraphQLでブランチ、コミット、リリースを一括取得
+            # 取得件数は各50件に設定（適宜調整可能）
+            QUERY='
+            query($owner:String!, $name:String!) {
+              repository(owner:$owner, name:$name) {
+                fullName
+                url
+                description
+                stargazerCount
+                refs(refPrefix: "refs/heads/", first: 50) {
+                  nodes {
+                    name
+                    target {
+                      ... on Commit {
+                        oid
+                        message
+                        committedDate
+                        author {
+                          name
+                          email
                         }
                       }
                     }
                   }
-                  releases(first: 50) {
-                    nodes {
-                      tagName
-                      name
-                      publishedAt
+                }
+                releases(first: 50, orderBy: {field: CREATED_AT, direction: DESC}) {
+                  nodes {
+                    tagName
+                    name
+                    publishedAt
+                    author {
+                      login
                     }
                   }
                 }
-              }' -f owner=${repo%/*} -f name=${repo#*/} )
+              }
+            }'
 
-            # 3. 既存のJSONにマージ
-            jq ". += [$repo_data]" all_data.json > temp.json && mv temp.json all_data.json
+            # API実行して一時ファイルに保存
+            gh api graphql -f query="$QUERY" -f owner="$OWNER" -f name="$NAME" > single_repo.json
+
+            # 3. jqで既存のJSONにマージ
+            jq ". += [$(cat single_repo.json)]" edbp_data.json > temp.json && mv temp.json edbp_data.json
           done
 
-      - name: Save JSON as Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: edbp-plugin-info
-          path: all_data.json
+          echo "--- Data collection complete ---"
 
-      - name: Commit and Push (Optional)
+      - name: Commit and Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add all_data.json
-          git commit -m "Update edbp-plugin repository info" || exit 0
-          git push
+          git add edbp_data.json
+          # 変更がある場合のみコミット
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update edbp-plugin info: $(date +'%Y-%m-%d')" && git push)

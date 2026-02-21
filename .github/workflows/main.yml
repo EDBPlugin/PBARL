@@ -3,7 +3,7 @@ name: Export EDBP Plugin Data (Final)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 * * * *'
 
 jobs:
   build:
@@ -37,7 +37,7 @@ jobs:
             OWNER=${REPO%/*}
             NAME=${REPO#*/}
 
-            # 2. GraphQLクエリ: target (... on Commit) を経由して history を取得
+            # 2. GraphQLクエリ
             QUERY='
             query($owner:String!, $name:String!) {
               repository(owner:$owner, name:$name) {
@@ -84,7 +84,7 @@ jobs:
             gh api graphql -f query="$QUERY" -f owner="$OWNER" -f name="$NAME" \
               --jq '.data.repository' > single_repo.json
 
-            # 3. JSONの整形 (shortId / longId の両方を保持)
+            # 3. JSONの整形
             if [ -s single_repo.json ] && [ "$(cat single_repo.json)" != "null" ]; then
               jq '
                 if .manifestFile and .manifestFile.text then 

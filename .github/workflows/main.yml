@@ -1,15 +1,15 @@
 name: Export EDBP Plugin Data
 
 on:
-  workflow_dispatch: # 手動実行ボタンを表示
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *' # 毎日午前0時に自動更新（任意）
+    - cron: '0 0 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # データをリポジトリに書き込むために必要
+      contents: write
 
     steps:
       - name: Checkout Repository
@@ -22,16 +22,14 @@ jobs:
         run: |
           echo "--- Searching for repositories with topic: $TOPIC_NAME ---"
           
-          # 1. トピックを持つリポジトリを検索 (fullNameのみ抽出)
-          # search repos を使うことで組織を問わず検索可能
-          REPOS=$(gh search repos --topic "$TOPIC_NAME" --json fullName -q '.[].fullName')
+          # 1. リポジトリ一覧を取得 (nameWithOwner を使用)
+          REPOS=$(gh search repos --topic "$TOPIC_NAME" --json nameWithOwner -q '.[].nameWithOwner')
 
           if [ -z "$REPOS" ]; then
             echo "::error::No repositories found with topic: $TOPIC_NAME"
             exit 1
           fi
 
-          # 空のJSON配列を作成
           echo "[]" > edbp_data.json
 
           for REPO in $REPOS; do
@@ -39,12 +37,11 @@ jobs:
             OWNER=${REPO%/*}
             NAME=${REPO#*/}
 
-            # 2. GraphQLでブランチ、コミット、リリースを一括取得
-            # 取得件数は各50件に設定（適宜調整可能）
+            # 2. GraphQLクエリ (fullName を nameWithOwner に修正)
             QUERY='
             query($owner:String!, $name:String!) {
               repository(owner:$owner, name:$name) {
-                fullName
+                nameWithOwner
                 url
                 description
                 stargazerCount
@@ -69,19 +66,20 @@ jobs:
                     tagName
                     name
                     publishedAt
-                    author {
-                      login
-                    }
                   }
                 }
               }
             }'
 
-            # API実行して一時ファイルに保存
-            gh api graphql -f query="$QUERY" -f owner="$OWNER" -f name="$NAME" > single_repo.json
+            # API実行結果を一時ファイルに保存
+            # repository フィールドの中身だけを抽出してマージ
+            gh api graphql -f query="$QUERY" -f owner="$OWNER" -f name="$NAME" \
+              --jq '.data.repository' > single_repo.json
 
-            # 3. jqで既存のJSONにマージ
-            jq ". += [$(cat single_repo.json)]" edbp_data.json > temp.json && mv temp.json edbp_data.json
+            # 3. JSONが空でないか確認してマージ
+            if [ -s single_repo.json ] && [ "$(cat single_repo.json)" != "null" ]; then
+              jq ". += [$(cat single_repo.json)]" edbp_data.json > temp.json && mv temp.json edbp_data.json
+            fi
           done
 
           echo "--- Data collection complete ---"
@@ -91,5 +89,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add edbp_data.json
-          # 変更がある場合のみコミット
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update edbp-plugin info: $(date +'%Y-%m-%d')" && git push)

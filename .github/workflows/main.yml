@@ -1,4 +1,4 @@
-name: Export EDBP Plugin Data (Full & Short IDs)
+name: Export EDBP Plugin Data (Final)
 
 on:
   workflow_dispatch:
@@ -22,6 +22,7 @@ jobs:
         run: |
           echo "--- Searching for repositories with topic: $TOPIC_NAME ---"
           
+          # 1. 検索時は 'fullName' を使用
           REPOS=$(gh search repos --topic "$TOPIC_NAME" --json fullName -q '.[].fullName')
 
           if [ -z "$REPOS" ]; then
@@ -36,6 +37,7 @@ jobs:
             OWNER=${REPO%/*}
             NAME=${REPO#*/}
 
+            # 2. GraphQLクエリ: target (... on Commit) を経由して history を取得
             QUERY='
             query($owner:String!, $name:String!) {
               repository(owner:$owner, name:$name) {
@@ -51,15 +53,18 @@ jobs:
                 refs(refPrefix: "refs/heads/", first: 10) {
                   nodes {
                     branchName: name
-                    history(first: 30) {
-                      nodes {
-                        shortId: abbreviatedOid
-                        longId: oid
-                        message
-                        committedDate
-                        author {
-                          name
-                          email
+                    target {
+                      ... on Commit {
+                        history(first: 30) {
+                          nodes {
+                            shortId: abbreviatedOid
+                            longId: oid
+                            message
+                            committedDate
+                            author {
+                              name
+                            }
+                          }
                         }
                       }
                     }
@@ -75,9 +80,11 @@ jobs:
               }
             }'
 
+            # API実行
             gh api graphql -f query="$QUERY" -f owner="$OWNER" -f name="$NAME" \
               --jq '.data.repository' > single_repo.json
 
+            # 3. JSONの整形 (shortId / longId の両方を保持)
             if [ -s single_repo.json ] && [ "$(cat single_repo.json)" != "null" ]; then
               jq '
                 if .manifestFile and .manifestFile.text then 
@@ -88,13 +95,13 @@ jobs:
                 del(.manifestFile) |
                 .branches = [.refs.nodes[] | {
                   name: .branchName,
-                  commits: [.history.nodes[] | {
+                  commits: (if .target.history then [.target.history.nodes[] | {
                     shortId: .shortId,
                     longId: .longId,
                     message: .message,
                     date: .committedDate,
                     author: .author.name
-                  }]
+                  }] else [] end)
                 }] |
                 del(.refs)
               ' single_repo.json > processed_repo.json
@@ -109,6 +116,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add edbp_data.json
           if ! git diff --cached --exit-code; then
-            git commit -m "Update edbp-plugin data: Include short and long IDs"
+            git commit -m "Update edbp-plugin data: Fix history query and IDs"
             git push
           fi

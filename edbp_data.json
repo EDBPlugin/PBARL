@@ -1,101 +1,545 @@
-name: Export EDBP Plugin Data with Manifest
-
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Fetch and Process Data
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TOPIC_NAME: "edbp-plugin"
-        run: |
-          echo "--- Searching for repositories with topic: $TOPIC_NAME ---"
-          
-          # 1. リポジトリリストの取得
-          REPOS=$(gh search repos --topic "$TOPIC_NAME" --json fullName -q '.[].fullName')
-
-          if [ -z "$REPOS" ]; then
-            echo "::error::No repositories found with topic: $TOPIC_NAME"
-            exit 1
-          fi
-
-          echo "[]" > edbp_data.json
-
-          for REPO in $REPOS; do
-            echo "Processing: $REPO"
-            OWNER=${REPO%/*}
-            NAME=${REPO#*/}
-
-            # 2. GraphQLクエリ (manifest.json の取得を追加)
-            # HEAD:manifest.json は、デフォルトブランチのルートにある manifest.json を指します
-            QUERY='
-            query($owner:String!, $name:String!) {
-              repository(owner:$owner, name:$name) {
-                nameWithOwner
-                url
-                description
-                stargazerCount
-                forkCount
-                manifestFile: object(expression: "HEAD:manifest.json") {
-                  ... on Blob {
-                    text
-                  }
-                }
-                refs(refPrefix: "refs/heads/", first: 10) {
-                  nodes {
-                    name
-                    target {
-                      ... on Commit {
-                        oid
-                        message
-                        committedDate
-                      }
-                    }
-                  }
-                }
-                releases(first: 10, orderBy: {field: CREATED_AT, direction: DESC}) {
-                  nodes {
-                    tagName
-                    name
-                    publishedAt
-                  }
-                }
-              }
-            }'
-
-            # API実行
-            gh api graphql -f query="$QUERY" -f owner="$OWNER" -f name="$NAME" \
-              --jq '.data.repository' > single_repo.json
-
-            # 3. manifest.json (テキスト) を JSONオブジェクトに変換してマージ
-            # textフィールドに入っている文字列を jq の fromjson でパースします
-            if [ -s single_repo.json ] && [ "$(cat single_repo.json)" != "null" ]; then
-              jq 'if .manifestFile and .manifestFile.text then .manifest = (.manifestFile.text | fromjson) else .manifest = null end | del(.manifestFile)' \
-              single_repo.json > processed_repo.json
-              
-              jq ". += [$(cat processed_repo.json)]" edbp_data.json > temp.json && mv temp.json edbp_data.json
-            fi
-          done
-
-          echo "--- Data collection complete ---"
-
-      - name: Commit and Push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add edbp_data.json
-          if ! git diff --cached --exit-code; then
-            git commit -m "Update edbp-plugin info with manifest: $(date +'%Y-%m-%d')"
-            git push
-          fi
+[
+  {
+    "createdAt": "2026-02-08T01:25:45Z",
+    "description": "プラグインの内部コードを編集し、システムデバッグ情報を表示する開発者向けツールです。",
+    "forkCount": 0,
+    "nameWithOwner": "EDBPlugin/debug-editor-plugin",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pushedAt": "2026-02-18T02:57:56Z",
+    "refs": {
+      "nodes": [
+        {
+          "name": "main",
+          "target": {
+            "author": {
+              "email": "appipinopi@gmail.com",
+              "name": "appipinopi"
+            },
+            "committedDate": "2026-02-18T02:49:04Z",
+            "message": "Update manifest.json",
+            "oid": "72543027901071383e4aac7c7dbcc01fc5a732c8"
+          }
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "description": "",
+          "name": "最新のmanifest",
+          "publishedAt": "2026-02-18T02:57:56Z",
+          "tagName": "1.3.0"
+        },
+        {
+          "description": "# Verssion 1.2.0\r\n## アップデート内容\r\n- フォルダの開閉機能:エクスプローラーのプラグイン名（フォルダ）をクリックすることで、配下のファイルを展開・格納できるようになりました。フォルダ名の左側にある矢印アイコンで現在の開閉状態を確認できます。\r\n- 検索・一括置換機能:左端のアクティビティバーに「検索アイコン」を追加しました。\r\nインストールされている全プラグインのコードから特定の文字列を検索し、ヒットした箇所を一覧表示します。\r\n「Replace」欄に入力して「Replace All」を押すことで、全プラグインを対象とした一括置換が可能です。\r\n- UI の改善:サイドバーのアイコンで「エクスプローラー」と「検索」を切り替える VS Code ライクな操作感を実現しました。\r\n- フォルダ階層の導入:各プラグインをフォルダとして表示し、その中に manifest.json と plugin.js を配置しました。\r\nフォルダアイコンとファイルアイコン（JSON/JS）を使い分け、よりVS Codeに近い視覚的構造になっています。\r\n- マニフェスト編集機能:manifest.json を選択すると、プラグインのメタデータ（名前、作者、属性など）をJSON形式で直接編集・保存できます。\r\n- スクリプト編集機能:plugin.js を選択すると、従来通りプラグインの実行コードを編集できます。\r\n## インストール方法\r\n1. 添付の debug-plugin.zip をダウンロードします。\r\n2. CDMのプラグイン管理画面を開き、「ZIPからインストール」ボタンをクリックしてこのファイルを選択してください。\r\n3. インストール後、画面右下に表示される「🛠️ Debug」ボタンからツールを起動できます。\r\n\r\n**Full Changelog**: https://github.com/EDBPlugin/debug-editor-plugin/compare/1.0.0...1.2.0",
+          "name": "V1.2.0 README",
+          "publishedAt": "2026-02-08T01:59:24Z",
+          "tagName": "1.2.0"
+        },
+        {
+          "description": "# Verssion 1.0.0\r\n## プラグインの機能\r\n- Internal Editor: プラグイン自身の内部コードをUI上で直接編集・保存できる機能です。開発中の調整に役立ちます。\r\n- System Logs: 仮想的なシステムログやステータスコードを表示し、動作確認のシミュレーションが可能です。\r\n- Glossary: UUID、シリアライゼーション、LZStringなど、CDMの開発に関わる専門用語の解説を表示します。\r\n\r\n## インストール方法\r\n1. 添付の debug-plugin.zip をダウンロードします。\r\n2. CDMのプラグイン管理画面を開き、「ZIPからインストール」ボタンをクリックしてこのファイルを選択してください。\r\n3. インストール後、画面右下に表示される「🛠️ Debug」ボタンからツールを起動できます。",
+          "name": "V1.0.0",
+          "publishedAt": "2026-02-08T01:29:47Z",
+          "tagName": "1.0.0"
+        }
+      ]
+    },
+    "stargazerCount": 1,
+    "updatedAt": "2026-02-18T02:49:08Z",
+    "url": "https://github.com/EDBPlugin/debug-editor-plugin",
+    "watchers": {
+      "totalCount": 0
+    }
+  },
+  {
+    "createdAt": "2026-02-08T12:50:50Z",
+    "description": null,
+    "forkCount": 0,
+    "nameWithOwner": "himais0giiiin/secure-token-setting",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pushedAt": "2026-02-18T07:46:45Z",
+    "refs": {
+      "nodes": [
+        {
+          "name": "latest",
+          "target": {
+            "author": {
+              "email": "n.izumi0311@gmail.com",
+              "name": "himais0giiiin"
+            },
+            "committedDate": "2026-02-18T07:46:20Z",
+            "message": "v1.3.1 再修正",
+            "oid": "93bb7af48017ea5dda4cf03f9def34f9bd595e46"
+          }
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "description": "",
+          "name": "v1.3.1",
+          "publishedAt": "2026-02-18T07:46:45Z",
+          "tagName": "v1.3.1"
+        },
+        {
+          "description": "**Full Changelog**: https://github.com/himais0giiiin/secure-token-setting/compare/v1.2.0...v1.3.0",
+          "name": "v1.3.0",
+          "publishedAt": "2026-02-18T07:45:12Z",
+          "tagName": "v1.3.0"
+        },
+        {
+          "description": "",
+          "name": "v1.2.0",
+          "publishedAt": "2026-02-14T11:44:41Z",
+          "tagName": "v1.2.0"
+        },
+        {
+          "description": "**Full Changelog**: https://github.com/himais0giiiin/secure-token-setting/commits/release",
+          "name": "v1.1.1",
+          "publishedAt": "2026-02-08T13:21:28Z",
+          "tagName": "release"
+        }
+      ]
+    },
+    "stargazerCount": 1,
+    "updatedAt": "2026-02-18T07:46:27Z",
+    "url": "https://github.com/himais0giiiin/secure-token-setting",
+    "watchers": {
+      "totalCount": 1
+    }
+  },
+  {
+    "createdAt": "2026-02-17T13:25:45Z",
+    "description": "EDBBから、KEITO Cloud APIを利用してPythonコードのアップロード・実行・ログ確認・プロセス管理までを行えるプラグインです。",
+    "forkCount": 1,
+    "nameWithOwner": "himais0giiiin/KEITO-Cloud-Deployer",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pushedAt": "2026-02-18T06:59:46Z",
+    "refs": {
+      "nodes": [
+        {
+          "name": "latest",
+          "target": {
+            "author": {
+              "email": "98646029+himais0giiiin@users.noreply.github.com",
+              "name": "himais0giiiin"
+            },
+            "committedDate": "2026-02-18T06:59:46Z",
+            "message": "Merge pull request #1 from appipinopi/latest",
+            "oid": "a2debb3b58b9b500ca90f036d825f20ecd0b7aea"
+          }
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 1,
+    "updatedAt": "2026-02-18T06:59:50Z",
+    "url": "https://github.com/himais0giiiin/KEITO-Cloud-Deployer",
+    "watchers": {
+      "totalCount": 0
+    }
+  },
+  {
+    "createdAt": "2026-02-12T10:04:28Z",
+    "description": null,
+    "forkCount": 0,
+    "nameWithOwner": "appipinopi/Plugin-test",
+    "primaryLanguage": null,
+    "pushedAt": "2026-02-20T12:46:37Z",
+    "refs": {
+      "nodes": [
+        {
+          "name": "beta",
+          "target": {
+            "author": {
+              "email": "appipinopi@gmail.com",
+              "name": "appipinopi"
+            },
+            "committedDate": "2026-02-12T10:04:58Z",
+            "message": "Create README.md",
+            "oid": "ec68e345401514f2a5318b5363346193d9d01e5a"
+          }
+        },
+        {
+          "name": "dev",
+          "target": {
+            "author": {
+              "email": "appipinopi@gmail.com",
+              "name": "appipinopi"
+            },
+            "committedDate": "2026-02-12T10:04:58Z",
+            "message": "Create README.md",
+            "oid": "ec68e345401514f2a5318b5363346193d9d01e5a"
+          }
+        },
+        {
+          "name": "main",
+          "target": {
+            "author": {
+              "email": "appipinopi@gmail.com",
+              "name": "appipinopi"
+            },
+            "committedDate": "2026-02-12T10:04:58Z",
+            "message": "Create README.md",
+            "oid": "ec68e345401514f2a5318b5363346193d9d01e5a"
+          }
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "updatedAt": "2026-02-12T10:05:11Z",
+    "url": "https://github.com/appipinopi/Plugin-test",
+    "watchers": {
+      "totalCount": 0
+    }
+  },
+  {
+    "createdAt": "2026-02-19T22:35:09Z",
+    "description": "EDBPプラグイン",
+    "forkCount": 0,
+    "nameWithOwner": "yuta25912/AutoGuard",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pushedAt": "2026-02-19T22:35:11Z",
+    "refs": {
+      "nodes": [
+        {
+          "name": "master",
+          "target": {
+            "author": {
+              "email": "swyu0925@yahoo.co.jp",
+              "name": "SWTBSYUT"
+            },
+            "committedDate": "2026-02-19T22:35:01Z",
+            "message": "初回コミット",
+            "oid": "cead2bb8764c4b7064de025fc5252d1143f382d5"
+          }
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "updatedAt": "2026-02-19T22:37:28Z",
+    "url": "https://github.com/yuta25912/AutoGuard",
+    "watchers": {
+      "totalCount": 0
+    }
+  },
+  {
+    "createdAt": "2026-02-11T10:57:48Z",
+    "description": null,
+    "forkCount": 0,
+    "nameWithOwner": "appipinopi/Malicious-Test-Plugin",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pushedAt": "2026-02-18T23:53:38Z",
+    "refs": {
+      "nodes": [
+        {
+          "name": "main",
+          "target": {
+            "author": {
+              "email": "appipinopi@gmail.com",
+              "name": "appipinopi"
+            },
+            "committedDate": "2026-02-18T23:52:30Z",
+            "message": "Update manifest.json",
+            "oid": "09bc90b045325309afef3591b2b369c111abd832"
+          }
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "description": "**Full Changelog**: https://github.com/appipinopi/Malicious-Test-Plugin/compare/V1.1.1...V1.2.0",
+          "name": "V1.2",
+          "publishedAt": "2026-02-18T23:53:38Z",
+          "tagName": "V1.2.0"
+        },
+        {
+          "description": "READMEの更新",
+          "name": "V1.1.1",
+          "publishedAt": "2026-02-15T04:49:48Z",
+          "tagName": "V1.1.1"
+        },
+        {
+          "description": "",
+          "name": "V1.1.0",
+          "publishedAt": "2026-02-15T04:46:08Z",
+          "tagName": "V1.1.0"
+        },
+        {
+          "description": "",
+          "name": "V1.0.0",
+          "publishedAt": "2026-02-11T11:13:44Z",
+          "tagName": "V1.0.0"
+        }
+      ]
+    },
+    "stargazerCount": 0,
+    "updatedAt": "2026-02-18T23:52:33Z",
+    "url": "https://github.com/appipinopi/Malicious-Test-Plugin",
+    "watchers": {
+      "totalCount": 0
+    }
+  },
+  {
+    "createdAt": "2026-02-11T13:32:19Z",
+    "description": null,
+    "forkCount": 0,
+    "nameWithOwner": "appipinopi/SQL-Generator-Viewer",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pushedAt": "2026-02-11T13:33:33Z",
+    "refs": {
+      "nodes": [
+        {
+          "name": "main",
+          "target": {
+            "author": {
+              "email": "appipinopi@gmail.com",
+              "name": "appipinopi"
+            },
+            "committedDate": "2026-02-11T13:33:32Z",
+            "message": "Create plugins.js",
+            "oid": "de5f459c2aaebb409f35b4da43d63990c9c69322"
+          }
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "updatedAt": "2026-02-11T13:34:51Z",
+    "url": "https://github.com/appipinopi/SQL-Generator-Viewer",
+    "watchers": {
+      "totalCount": 0
+    }
+  },
+  {
+    "createdAt": "2026-02-16T22:23:04Z",
+    "description": "EDBPプラグイン",
+    "forkCount": 0,
+    "nameWithOwner": "yuta25912/EasyTranslate",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pushedAt": "2026-02-21T01:45:03Z",
+    "refs": {
+      "nodes": [
+        {
+          "name": "master",
+          "target": {
+            "author": {
+              "email": "swyu0925@yahoo.co.jp",
+              "name": "yuta25912"
+            },
+            "committedDate": "2026-02-21T01:45:01Z",
+            "message": "1.0.0-fix12(Manifest1.1.0対応)",
+            "oid": "c5701fca60c6c1eede90da904312d5d6a040617d"
+          }
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "updatedAt": "2026-02-21T01:45:28Z",
+    "url": "https://github.com/yuta25912/EasyTranslate",
+    "watchers": {
+      "totalCount": 0
+    }
+  },
+  {
+    "createdAt": "2026-02-08T10:58:38Z",
+    "description": null,
+    "forkCount": 0,
+    "nameWithOwner": "appipinopi/TimeScheduler",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pushedAt": "2026-02-18T14:13:18Z",
+    "refs": {
+      "nodes": [
+        {
+          "name": "main",
+          "target": {
+            "author": {
+              "email": "appipinopi@gmail.com",
+              "name": "appipinopi"
+            },
+            "committedDate": "2026-02-18T14:13:18Z",
+            "message": "manifest.json を更新",
+            "oid": "1187e899584d8603bfc623dd5facf3df6a44d399"
+          }
+        },
+        {
+          "name": "translatabot/config",
+          "target": {
+            "author": {
+              "email": "179169604+translatabotai[bot]@users.noreply.github.com",
+              "name": "translatabotai[bot]"
+            },
+            "committedDate": "2026-02-08T10:58:43Z",
+            "message": "[translatabot] Add configuration file",
+            "oid": "9fd917b2b579325d659de1481a99a067e2b9282a"
+          }
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "description": "",
+          "name": "V1.1.0",
+          "publishedAt": "2026-02-09T09:23:12Z",
+          "tagName": "1.1.0"
+        },
+        {
+          "description": "",
+          "name": "V1.0.0",
+          "publishedAt": "2026-02-08T11:00:24Z",
+          "tagName": "1.0.0"
+        }
+      ]
+    },
+    "stargazerCount": 0,
+    "updatedAt": "2026-02-18T14:13:22Z",
+    "url": "https://github.com/appipinopi/TimeScheduler",
+    "watchers": {
+      "totalCount": 0
+    }
+  },
+  {
+    "createdAt": "2026-02-16T11:24:32Z",
+    "description": "EDBPプラグイン",
+    "forkCount": 0,
+    "nameWithOwner": "yuta25912/CheckStatus",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pushedAt": "2026-02-21T01:44:49Z",
+    "refs": {
+      "nodes": [
+        {
+          "name": "master",
+          "target": {
+            "author": {
+              "email": "swyu0925@yahoo.co.jp",
+              "name": "yuta25912"
+            },
+            "committedDate": "2026-02-21T01:44:47Z",
+            "message": "1.0.0-fix9(Manifest1.1.0対応)",
+            "oid": "fa121cdf13dd3d1b1d30446c139f69ae63592873"
+          }
+        }
+      ]
+    },
+    "releases": {
+      "nodes": [
+        {
+          "description": "## 1.0.0 Release/リリース\r\n### 追加()ブロック\r\n- **💻 CPU使用率 (%)**\r\n- **🧠 RAM使用量 (GiB)**\r\n- **📊 RAM使用率 (%)**\r\n- **📡 Ping (ms)**\r\n- **⏱️ 現稼働時間**\r\n- **🏠 サーバー数**\r\n- **🛠️ コマンド数**\r\n\r\n**詳しくはREADMEをご覧ください**",
+          "name": "1.0.0",
+          "publishedAt": "2026-02-16T12:22:32Z",
+          "tagName": "1.0.0"
+        }
+      ]
+    },
+    "stargazerCount": 0,
+    "updatedAt": "2026-02-21T01:44:53Z",
+    "url": "https://github.com/yuta25912/CheckStatus",
+    "watchers": {
+      "totalCount": 0
+    }
+  },
+  {
+    "createdAt": "2026-02-18T08:00:08Z",
+    "description": null,
+    "forkCount": 0,
+    "nameWithOwner": "EDBPlugin/Templates-Plugin",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pushedAt": "2026-02-18T08:03:40Z",
+    "refs": {
+      "nodes": [
+        {
+          "name": "main",
+          "target": {
+            "author": {
+              "email": "appipinopi@gmail.com",
+              "name": "appipinopi"
+            },
+            "committedDate": "2026-02-18T08:03:40Z",
+            "message": "Create README.md",
+            "oid": "7773b7b874bc0d2214e9cc71cfc3536f89468fd5"
+          }
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "updatedAt": "2026-02-18T08:14:36Z",
+    "url": "https://github.com/EDBPlugin/Templates-Plugin",
+    "watchers": {
+      "totalCount": 0
+    }
+  },
+  {
+    "createdAt": "2026-02-16T22:23:10Z",
+    "description": "EDBPプラグイン",
+    "forkCount": 0,
+    "nameWithOwner": "yuta25912/VCManager",
+    "primaryLanguage": {
+      "name": "JavaScript"
+    },
+    "pushedAt": "2026-02-21T01:45:15Z",
+    "refs": {
+      "nodes": [
+        {
+          "name": "master",
+          "target": {
+            "author": {
+              "email": "swyu0925@yahoo.co.jp",
+              "name": "yuta25912"
+            },
+            "committedDate": "2026-02-21T01:45:12Z",
+            "message": "1.0.0-fix11(Manifest1.1.0対応)",
+            "oid": "06e0b55336c59f443e3b9328cb21c6b0eda7f81a"
+          }
+        }
+      ]
+    },
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "updatedAt": "2026-02-21T01:45:18Z",
+    "url": "https://github.com/yuta25912/VCManager",
+    "watchers": {
+      "totalCount": 0
+    }
+  }
+]

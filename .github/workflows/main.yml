@@ -1,0 +1,79 @@
+name: Save Topic Repository Info
+
+on:
+  workflow_dispatch: # 手動実行用
+  schedule:
+    - cron: '0 0 * * 1' # 毎週月曜日に実行（任意）
+
+jobs:
+  collect-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Fetch Topic Data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOPIC: "edbp-plugin"
+          ORG: "your-org-name" # 自分のユーザー名または組織名に変更
+        run: |
+          echo "Fetching repositories with topic: $TOPIC"
+          
+          # 1. 指定したトピックを持つリポジトリ一覧を取得
+          repos=$(gh repo list $ORG --topic $TOPIC --json nameWithOwner -q '.[].nameWithOwner')
+
+          echo "[]" > all_data.json
+
+          for repo in $repos; do
+            echo "Processing $repo..."
+
+            # 2. ブランチ、コミット、リリース情報を一括取得
+            # ※GraphQLを使用するとより詳細に、効率よく取得可能です
+            repo_data=$(gh api graphql -f query='
+              query($owner:String!, $name:String!) {
+                repository(owner:$owner, name:$name) {
+                  name
+                  url
+                  refs(refPrefix: "refs/heads/", first: 50) {
+                    nodes {
+                      name
+                      target {
+                        ... on Commit {
+                          oid
+                          message
+                          committedDate
+                        }
+                      }
+                    }
+                  }
+                  releases(first: 50) {
+                    nodes {
+                      tagName
+                      name
+                      publishedAt
+                    }
+                  }
+                }
+              }' -f owner=${repo%/*} -f name=${repo#*/} )
+
+            # 3. 既存のJSONにマージ
+            jq ". += [$repo_data]" all_data.json > temp.json && mv temp.json all_data.json
+          done
+
+      - name: Save JSON as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: edbp-plugin-info
+          path: all_data.json
+
+      - name: Commit and Push (Optional)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add all_data.json
+          git commit -m "Update edbp-plugin repository info" || exit 0
+          git push

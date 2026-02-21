@@ -1,4 +1,4 @@
-name: Export EDBP Plugin Data
+name: Export EDBP Plugin Data (Full & Short IDs)
 
 on:
   workflow_dispatch:
@@ -22,7 +22,6 @@ jobs:
         run: |
           echo "--- Searching for repositories with topic: $TOPIC_NAME ---"
           
-          # 1. 検索時は 'fullName' を使用してリストを取得
           REPOS=$(gh search repos --topic "$TOPIC_NAME" --json fullName -q '.[].fullName')
 
           if [ -z "$REPOS" ]; then
@@ -37,30 +36,25 @@ jobs:
             OWNER=${REPO%/*}
             NAME=${REPO#*/}
 
-            # 2. GraphQLクエリ (星の数、フォーク数、ウォッチ数などを追加)
             QUERY='
             query($owner:String!, $name:String!) {
               repository(owner:$owner, name:$name) {
                 nameWithOwner
                 url
-                description
                 stargazerCount
                 forkCount
-                watchers {
-                  totalCount
+                manifestFile: object(expression: "HEAD:manifest.json") {
+                  ... on Blob {
+                    text
+                  }
                 }
-                primaryLanguage {
-                  name
-                }
-                createdAt
-                updatedAt
-                pushedAt
-                refs(refPrefix: "refs/heads/", first: 50) {
+                refs(refPrefix: "refs/heads/", first: 10) {
                   nodes {
-                    name
-                    target {
-                      ... on Commit {
-                        oid
+                    branchName: name
+                    history(first: 30) {
+                      nodes {
+                        shortId: abbreviatedOid
+                        longId: oid
                         message
                         committedDate
                         author {
@@ -71,30 +65,43 @@ jobs:
                     }
                   }
                 }
-                releases(first: 50, orderBy: {field: CREATED_AT, direction: DESC}) {
+                releases(first: 10, orderBy: {field: CREATED_AT, direction: DESC}) {
                   nodes {
                     tagName
                     name
                     publishedAt
-                    description
                   }
                 }
               }
             }'
 
-            # API実行結果を抽出して一時保存
             gh api graphql -f query="$QUERY" -f owner="$OWNER" -f name="$NAME" \
               --jq '.data.repository' > single_repo.json
 
-            # 3. JSONが正しく取得できていればマージ
             if [ -s single_repo.json ] && [ "$(cat single_repo.json)" != "null" ]; then
-              jq ". += [$(cat single_repo.json)]" edbp_data.json > temp.json && mv temp.json edbp_data.json
-            else
-              echo "Warning: Could not fetch details for $REPO"
+              jq '
+                if .manifestFile and .manifestFile.text then 
+                  .manifest = (.manifestFile.text | fromjson) 
+                else 
+                  .manifest = null 
+                end | 
+                del(.manifestFile) |
+                .branches = [.refs.nodes[] | {
+                  name: .branchName,
+                  commits: [.history.nodes[] | {
+                    shortId: .shortId,
+                    longId: .longId,
+                    message: .message,
+                    date: .committedDate,
+                    author: .author.name
+                  }]
+                }] |
+                del(.refs)
+              ' single_repo.json > processed_repo.json
+              
+              jq ". += [$(cat processed_repo.json)]" edbp_data.json > temp.json && mv temp.json edbp_data.json
             fi
           done
-
-          echo "--- Data collection complete ---"
 
       - name: Commit and Push
         run: |
@@ -102,8 +109,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add edbp_data.json
           if ! git diff --cached --exit-code; then
-            git commit -m "Update edbp-plugin info: $(date +'%Y-%m-%d')"
+            git commit -m "Update edbp-plugin data: Include short and long IDs"
             git push
-          else
-            echo "No changes to commit"
           fi

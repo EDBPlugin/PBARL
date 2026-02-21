@@ -107,85 +107,6 @@
     ]
   },
   {
-    "forkCount": 1,
-    "nameWithOwner": "himais0giiiin/KEITO-Cloud-Deployer",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 1,
-    "url": "https://github.com/himais0giiiin/KEITO-Cloud-Deployer",
-    "manifest": {
-      "id": "keitocloud-deployer",
-      "name": "KEITO Cloud Deployer",
-      "version": "3.3.0",
-      "author": ".KEITO",
-      "description": "生成したPythonコードをKEITO Cloud APIにアップロード・実行し、ログ確認やプロセス管理まで行えるプラグインです。",
-      "tags": [
-        "deployment",
-        "cloud",
-        "utility",
-        "python",
-        "runner"
-      ],
-      "affectsStyle": true,
-      "affectsBlocks": false,
-      "api": {
-        "name": "KEITO Cloud API",
-        "baseUrl": "https://cloud.keitodaze.net"
-      },
-      "minAppVersion": "1.0.0"
-    },
-    "branches": [
-      {
-        "name": "latest",
-        "commits": [
-          {
-            "shortId": "a2debb3",
-            "longId": "a2debb3b58b9b500ca90f036d825f20ecd0b7aea",
-            "message": "Merge pull request #1 from appipinopi/latest",
-            "date": "2026-02-18T06:59:46Z",
-            "author": "himais0giiiin"
-          },
-          {
-            "shortId": "4dae666",
-            "longId": "4dae66614dc9ebeed967bd643df9560651c146ab",
-            "message": "Update manifest.json",
-            "date": "2026-02-17T23:58:47Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "10fec38",
-            "longId": "10fec387e596e889e65cc7bc0f139c5c39f7857e",
-            "message": "Merge branch 'main' of https://github.com/himais0giiiin/KEITO-Cloud-Deployer",
-            "date": "2026-02-17T13:57:00Z",
-            "author": "himais0giiiin"
-          },
-          {
-            "shortId": "dca7113",
-            "longId": "dca711374203c2554ee543ab39ad36069fdfcb7a",
-            "message": "v1.1.0:ファイルアップロード機能の追加",
-            "date": "2026-02-17T13:56:33Z",
-            "author": "himais0giiiin"
-          },
-          {
-            "shortId": "0fc5c0d",
-            "longId": "0fc5c0d78d044b285e7afa4ce2a47374d5e4fa2a",
-            "message": "Update README.md",
-            "date": "2026-02-17T13:36:15Z",
-            "author": "himais0giiiin"
-          },
-          {
-            "shortId": "156f0ce",
-            "longId": "156f0ce17d5a39c663c067bd15de5b1c7972baa0",
-            "message": "first commit",
-            "date": "2026-02-17T13:25:48Z",
-            "author": "himais0giiiin"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "forkCount": 0,
     "nameWithOwner": "himais0giiiin/secure-token-setting",
     "releases": {
@@ -330,6 +251,85 @@
             "longId": "a56aa3c10cfe7b18925ca2a05b41c2df41748238",
             "message": "first commit",
             "date": "2026-02-08T12:50:55Z",
+            "author": "himais0giiiin"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 1,
+    "nameWithOwner": "himais0giiiin/KEITO-Cloud-Deployer",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 1,
+    "url": "https://github.com/himais0giiiin/KEITO-Cloud-Deployer",
+    "manifest": {
+      "id": "keitocloud-deployer",
+      "name": "KEITO Cloud Deployer",
+      "version": "3.3.0",
+      "author": ".KEITO",
+      "description": "生成したPythonコードをKEITO Cloud APIにアップロード・実行し、ログ確認やプロセス管理まで行えるプラグインです。",
+      "tags": [
+        "deployment",
+        "cloud",
+        "utility",
+        "python",
+        "runner"
+      ],
+      "affectsStyle": true,
+      "affectsBlocks": false,
+      "api": {
+        "name": "KEITO Cloud API",
+        "baseUrl": "https://cloud.keitodaze.net"
+      },
+      "minAppVersion": "1.0.0"
+    },
+    "branches": [
+      {
+        "name": "latest",
+        "commits": [
+          {
+            "shortId": "a2debb3",
+            "longId": "a2debb3b58b9b500ca90f036d825f20ecd0b7aea",
+            "message": "Merge pull request #1 from appipinopi/latest",
+            "date": "2026-02-18T06:59:46Z",
+            "author": "himais0giiiin"
+          },
+          {
+            "shortId": "4dae666",
+            "longId": "4dae66614dc9ebeed967bd643df9560651c146ab",
+            "message": "Update manifest.json",
+            "date": "2026-02-17T23:58:47Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "10fec38",
+            "longId": "10fec387e596e889e65cc7bc0f139c5c39f7857e",
+            "message": "Merge branch 'main' of https://github.com/himais0giiiin/KEITO-Cloud-Deployer",
+            "date": "2026-02-17T13:57:00Z",
+            "author": "himais0giiiin"
+          },
+          {
+            "shortId": "dca7113",
+            "longId": "dca711374203c2554ee543ab39ad36069fdfcb7a",
+            "message": "v1.1.0:ファイルアップロード機能の追加",
+            "date": "2026-02-17T13:56:33Z",
+            "author": "himais0giiiin"
+          },
+          {
+            "shortId": "0fc5c0d",
+            "longId": "0fc5c0d78d044b285e7afa4ce2a47374d5e4fa2a",
+            "message": "Update README.md",
+            "date": "2026-02-17T13:36:15Z",
+            "author": "himais0giiiin"
+          },
+          {
+            "shortId": "156f0ce",
+            "longId": "156f0ce17d5a39c663c067bd15de5b1c7972baa0",
+            "message": "first commit",
+            "date": "2026-02-17T13:25:48Z",
             "author": "himais0giiiin"
           }
         ]
@@ -1008,70 +1008,6 @@
   },
   {
     "forkCount": 0,
-    "nameWithOwner": "EDBPlugin/Templates-Plugin",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/EDBPlugin/Templates-Plugin",
-    "manifest": {
-      "id": "my-custom-plugin",
-      "name": "サンプルプラグイン",
-      "version": "1.0.0",
-      "author": "あなたの名前",
-      "description": "このプラグインは新しいコマンドブロックを追加します。",
-      "icon": "https://example.com/icon.png",
-      "tags": [
-        "utility",
-        "commands"
-      ],
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "repo": "https://github.com/YourName/my-plugin",
-      "externalPackages": [
-        "requests",
-        "aiohttp"
-      ],
-      "requiredPlugins": [
-        "core-utils-plugin"
-      ],
-      "api": {
-        "name": "Example API",
-        "baseUrl": "https://api.example.com"
-      },
-      "minAppVersion": "1.0.0"
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "7773b7b",
-            "longId": "7773b7b874bc0d2214e9cc71cfc3536f89468fd5",
-            "message": "Create README.md",
-            "date": "2026-02-18T08:03:40Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "4550cd6",
-            "longId": "4550cd6427c8c0cdda62b30b4f7d02c9c3d600a1",
-            "message": "Create plugin.js",
-            "date": "2026-02-18T08:02:01Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "142a34b",
-            "longId": "142a34b7b862b7436367123fb637c1dae9c796f5",
-            "message": "Create manifest.json",
-            "date": "2026-02-18T08:01:31Z",
-            "author": "appipinopi"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
     "nameWithOwner": "yuta25912/VCManager",
     "releases": {
       "nodes": []
@@ -1189,6 +1125,81 @@
             "message": "1.0.0-dev1",
             "date": "2026-02-16T22:23:06Z",
             "author": "SWTBSYUT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "EDBPlugin/Templates-Plugin",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/EDBPlugin/Templates-Plugin",
+    "manifest": {
+      "id": "my-custom-plugin",
+      "name": "サンプルプラグイン",
+      "version": "1.0.0",
+      "author": "あなたの名前",
+      "description": "このプラグインは新しいコマンドブロックを追加します。",
+      "icon": "https://example.com/icon.png",
+      "tags": [
+        "utility",
+        "commands"
+      ],
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "repo": "https://github.com/YourName/my-plugin",
+      "externalPackages": [
+        "requests",
+        "aiohttp"
+      ],
+      "pipInstall": [
+        "discord.py[voice]",
+        "aiohttp"
+      ],
+      "requiredPlugins": [
+        "core-utils-plugin"
+      ],
+      "api": {
+        "name": "Example API",
+        "baseUrl": "https://api.example.com"
+      },
+      "minAppVersion": "1.1.0"
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "b42ab11",
+            "longId": "b42ab11d54a84fbdbaa88c4e69dcba9ff8607322",
+            "message": "Update manifest.json",
+            "date": "2026-02-21T12:34:50Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "7773b7b",
+            "longId": "7773b7b874bc0d2214e9cc71cfc3536f89468fd5",
+            "message": "Create README.md",
+            "date": "2026-02-18T08:03:40Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "4550cd6",
+            "longId": "4550cd6427c8c0cdda62b30b4f7d02c9c3d600a1",
+            "message": "Create plugin.js",
+            "date": "2026-02-18T08:02:01Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "142a34b",
+            "longId": "142a34b7b862b7436367123fb637c1dae9c796f5",
+            "message": "Create manifest.json",
+            "date": "2026-02-18T08:01:31Z",
+            "author": "appipinopi"
           }
         ]
       }

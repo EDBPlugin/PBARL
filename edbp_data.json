@@ -676,112 +676,6 @@
   },
   {
     "forkCount": 0,
-    "nameWithOwner": "appipinopi/TimeScheduler",
-    "releases": {
-      "nodes": [
-        {
-          "name": "V1.1.0",
-          "publishedAt": "2026-02-09T09:23:12Z",
-          "tagName": "1.1.0"
-        },
-        {
-          "name": "V1.0.0",
-          "publishedAt": "2026-02-08T11:00:24Z",
-          "tagName": "1.0.0"
-        }
-      ]
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/appipinopi/TimeScheduler",
-    "manifest": {
-      "name": "Time & Scheduler",
-      "author": "appipinopi",
-      "version": "1.1.0",
-      "description": "Botに定期実行や予約投稿、遅延処理などの時間制御機能を追加します。",
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "repo": "https://github.com/appipinopi/TimeScheduler",
-      "uuid": "appipinopi-scheduler-001",
-      "minAppVersion": "1.0.0"
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "1187e89",
-            "longId": "1187e899584d8603bfc623dd5facf3df6a44d399",
-            "message": "manifest.json を更新",
-            "date": "2026-02-18T14:13:18Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "e38aa86",
-            "longId": "e38aa861583b8038962728734c84f1aa7229c1a0",
-            "message": "Update manifest.json",
-            "date": "2026-02-09T09:21:18Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "7d24560",
-            "longId": "7d24560169dbc8a479d9816c9fc002a52c037002",
-            "message": "Update manifest.json",
-            "date": "2026-02-09T09:07:30Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "bfc77d5",
-            "longId": "bfc77d5d0a123d822e48d2fb666e268722e0ed2e",
-            "message": "Update manifest.json",
-            "date": "2026-02-09T09:05:15Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "e73651d",
-            "longId": "e73651db004b527b5a44a3f25f4b6625fedd6ff2",
-            "message": "Update README.md",
-            "date": "2026-02-08T10:59:33Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "b9c03ea",
-            "longId": "b9c03ea8f10dff25415535f7a997c85460a145f6",
-            "message": "Add files via upload",
-            "date": "2026-02-08T10:58:59Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "3002a36",
-            "longId": "3002a3677df26da8fcfc4ba17c13a3b79c7bb941",
-            "message": "Initial commit",
-            "date": "2026-02-08T10:58:38Z",
-            "author": "appipinopi"
-          }
-        ]
-      },
-      {
-        "name": "translatabot/config",
-        "commits": [
-          {
-            "shortId": "9fd917b",
-            "longId": "9fd917b2b579325d659de1481a99a067e2b9282a",
-            "message": "[translatabot] Add configuration file",
-            "date": "2026-02-08T10:58:43Z",
-            "author": "translatabotai[bot]"
-          },
-          {
-            "shortId": "3002a36",
-            "longId": "3002a3677df26da8fcfc4ba17c13a3b79c7bb941",
-            "message": "Initial commit",
-            "date": "2026-02-08T10:58:38Z",
-            "author": "appipinopi"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
     "nameWithOwner": "yuta25912/CheckStatus",
     "releases": {
       "nodes": [
@@ -901,6 +795,112 @@
             "message": "初回コミット",
             "date": "2026-02-16T11:24:14Z",
             "author": "SWTBSYUT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "appipinopi/TimeScheduler",
+    "releases": {
+      "nodes": [
+        {
+          "name": "V1.1.0",
+          "publishedAt": "2026-02-09T09:23:12Z",
+          "tagName": "1.1.0"
+        },
+        {
+          "name": "V1.0.0",
+          "publishedAt": "2026-02-08T11:00:24Z",
+          "tagName": "1.0.0"
+        }
+      ]
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/appipinopi/TimeScheduler",
+    "manifest": {
+      "name": "Time & Scheduler",
+      "author": "appipinopi",
+      "version": "1.1.0",
+      "description": "Botに定期実行や予約投稿、遅延処理などの時間制御機能を追加します。",
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "repo": "https://github.com/appipinopi/TimeScheduler",
+      "uuid": "appipinopi-scheduler-001",
+      "minAppVersion": "1.0.0"
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "1187e89",
+            "longId": "1187e899584d8603bfc623dd5facf3df6a44d399",
+            "message": "manifest.json を更新",
+            "date": "2026-02-18T14:13:18Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "e38aa86",
+            "longId": "e38aa861583b8038962728734c84f1aa7229c1a0",
+            "message": "Update manifest.json",
+            "date": "2026-02-09T09:21:18Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "7d24560",
+            "longId": "7d24560169dbc8a479d9816c9fc002a52c037002",
+            "message": "Update manifest.json",
+            "date": "2026-02-09T09:07:30Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "bfc77d5",
+            "longId": "bfc77d5d0a123d822e48d2fb666e268722e0ed2e",
+            "message": "Update manifest.json",
+            "date": "2026-02-09T09:05:15Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "e73651d",
+            "longId": "e73651db004b527b5a44a3f25f4b6625fedd6ff2",
+            "message": "Update README.md",
+            "date": "2026-02-08T10:59:33Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "b9c03ea",
+            "longId": "b9c03ea8f10dff25415535f7a997c85460a145f6",
+            "message": "Add files via upload",
+            "date": "2026-02-08T10:58:59Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "3002a36",
+            "longId": "3002a3677df26da8fcfc4ba17c13a3b79c7bb941",
+            "message": "Initial commit",
+            "date": "2026-02-08T10:58:38Z",
+            "author": "appipinopi"
+          }
+        ]
+      },
+      {
+        "name": "translatabot/config",
+        "commits": [
+          {
+            "shortId": "9fd917b",
+            "longId": "9fd917b2b579325d659de1481a99a067e2b9282a",
+            "message": "[translatabot] Add configuration file",
+            "date": "2026-02-08T10:58:43Z",
+            "author": "translatabotai[bot]"
+          },
+          {
+            "shortId": "3002a36",
+            "longId": "3002a3677df26da8fcfc4ba17c13a3b79c7bb941",
+            "message": "Initial commit",
+            "date": "2026-02-08T10:58:38Z",
+            "author": "appipinopi"
           }
         ]
       }

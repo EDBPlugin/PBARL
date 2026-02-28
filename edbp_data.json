@@ -1061,6 +1061,116 @@
   },
   {
     "forkCount": 0,
+    "nameWithOwner": "yuta25912/AIChecker",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/yuta25912/AIChecker",
+    "manifest": {
+      "id": "ai-checker",
+      "name": "AIChecker",
+      "version": "1.0.0-dev11",
+      "author": "yuta25912",
+      "description": "Gemini Nanoを使用してコードのレビューやバグの報告を行うAIアシスタントです。",
+      "affectsStyle": true,
+      "affectsBlocks": false,
+      "minAppVersion": "1.1.0"
+    },
+    "branches": [
+      {
+        "name": "master",
+        "commits": [
+          {
+            "shortId": "706d9a1",
+            "longId": "706d9a13ba9d6074276a1e1b8d6fc05176f09885",
+            "message": "1.0.0-dev12",
+            "date": "2026-02-28T09:09:20Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "e5f8512",
+            "longId": "e5f8512955d2535af0d1498f174cb90f8ccc7c0a",
+            "message": "1.0.0-dev10",
+            "date": "2026-02-28T08:57:59Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "71ee188",
+            "longId": "71ee1889aafb5db24989d78130bc0f04de860c84",
+            "message": "1.0.0-dev9(修正)",
+            "date": "2026-02-28T08:05:37Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "46040c0",
+            "longId": "46040c0ccd28985fa4ac332a7ca3157ec9f7d635",
+            "message": "1.0.0-dev8(修正)",
+            "date": "2026-02-28T08:02:11Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "6c6e541",
+            "longId": "6c6e5418a416ed44716fbdbb492fa09c543e984a",
+            "message": "1.0.0-dev7(GUI修正)",
+            "date": "2026-02-28T07:57:01Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "b8012f3",
+            "longId": "b8012f3ce02bcba3ecaeb25f662a6efee0630ed4",
+            "message": "1.0.0-dev6",
+            "date": "2026-02-28T07:47:19Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "533be6a",
+            "longId": "533be6a464dc6d1fa06692a4725a8602e381b64f",
+            "message": "1.0.0-dev5",
+            "date": "2026-02-28T07:41:59Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "7749327",
+            "longId": "77493274343faa0524f5bfc50dfdb26241012dda",
+            "message": "1.0.0-dev4(修正)",
+            "date": "2026-02-28T07:38:13Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "478025d",
+            "longId": "478025d39fb712ed85deaec853cc432ac54d0298",
+            "message": "Update manifest version to 1.1.0",
+            "date": "2026-02-28T07:37:09Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "7f6907f",
+            "longId": "7f6907f2728795e6cb4c366bb9627adfab8ccf24",
+            "message": "Migrate to WebLLM with Gemma 2 2B",
+            "date": "2026-02-28T07:36:43Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "5afc7c3",
+            "longId": "5afc7c3261228e2068feaba2bd3992024fa005f5",
+            "message": "1.0.0-dev1",
+            "date": "2026-02-28T07:31:08Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "e1e8217",
+            "longId": "e1e8217aeb91e6b7ea6a43d7e910da8b47d135a7",
+            "message": "初回コミット",
+            "date": "2026-02-28T06:40:53Z",
+            "author": "yuta25912"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "yuta25912/VCManager",
     "releases": {
       "nodes": []
@@ -1253,102 +1363,6 @@
             "message": "Create manifest.json",
             "date": "2026-02-18T08:01:31Z",
             "author": "appipinopi"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "yuta25912/AIChecker",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/yuta25912/AIChecker",
-    "manifest": {
-      "id": "ai-checker",
-      "name": "AIChecker",
-      "version": "1.0.0-dev9",
-      "author": "yuta25912",
-      "description": "Gemini Nanoを使用してコードのレビューやバグの報告を行うAIアシスタントです。",
-      "affectsStyle": true,
-      "affectsBlocks": false,
-      "minAppVersion": "1.1.0"
-    },
-    "branches": [
-      {
-        "name": "master",
-        "commits": [
-          {
-            "shortId": "71ee188",
-            "longId": "71ee1889aafb5db24989d78130bc0f04de860c84",
-            "message": "1.0.0-dev9(修正)",
-            "date": "2026-02-28T08:05:37Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "46040c0",
-            "longId": "46040c0ccd28985fa4ac332a7ca3157ec9f7d635",
-            "message": "1.0.0-dev8(修正)",
-            "date": "2026-02-28T08:02:11Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "6c6e541",
-            "longId": "6c6e5418a416ed44716fbdbb492fa09c543e984a",
-            "message": "1.0.0-dev7(GUI修正)",
-            "date": "2026-02-28T07:57:01Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "b8012f3",
-            "longId": "b8012f3ce02bcba3ecaeb25f662a6efee0630ed4",
-            "message": "1.0.0-dev6",
-            "date": "2026-02-28T07:47:19Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "533be6a",
-            "longId": "533be6a464dc6d1fa06692a4725a8602e381b64f",
-            "message": "1.0.0-dev5",
-            "date": "2026-02-28T07:41:59Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "7749327",
-            "longId": "77493274343faa0524f5bfc50dfdb26241012dda",
-            "message": "1.0.0-dev4(修正)",
-            "date": "2026-02-28T07:38:13Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "478025d",
-            "longId": "478025d39fb712ed85deaec853cc432ac54d0298",
-            "message": "Update manifest version to 1.1.0",
-            "date": "2026-02-28T07:37:09Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "7f6907f",
-            "longId": "7f6907f2728795e6cb4c366bb9627adfab8ccf24",
-            "message": "Migrate to WebLLM with Gemma 2 2B",
-            "date": "2026-02-28T07:36:43Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "5afc7c3",
-            "longId": "5afc7c3261228e2068feaba2bd3992024fa005f5",
-            "message": "1.0.0-dev1",
-            "date": "2026-02-28T07:31:08Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "e1e8217",
-            "longId": "e1e8217aeb91e6b7ea6a43d7e910da8b47d135a7",
-            "message": "初回コミット",
-            "date": "2026-02-28T06:40:53Z",
-            "author": "yuta25912"
           }
         ]
       }

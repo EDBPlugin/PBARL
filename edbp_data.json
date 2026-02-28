@@ -676,6 +676,39 @@
   },
   {
     "forkCount": 0,
+    "nameWithOwner": "yuta25912/AIChecker",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/yuta25912/AIChecker",
+    "manifest": {
+      "id": "ai-checker",
+      "name": "AIChecker",
+      "version": "1.0.0",
+      "author": "yuta25912",
+      "description": "Gemini Nanoを使用してコードのレビューやバグの報告を行うAIアシスタントです。",
+      "affectsStyle": true,
+      "affectsBlocks": false,
+      "minAppVersion": "1.1.0"
+    },
+    "branches": [
+      {
+        "name": "master",
+        "commits": [
+          {
+            "shortId": "e1e8217",
+            "longId": "e1e8217aeb91e6b7ea6a43d7e910da8b47d135a7",
+            "message": "初回コミット",
+            "date": "2026-02-28T06:40:53Z",
+            "author": "yuta25912"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "grampr/easy-bdc_bettercommand",
     "releases": {
       "nodes": []

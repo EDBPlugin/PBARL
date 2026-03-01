@@ -632,6 +632,45 @@
   },
   {
     "forkCount": 0,
+    "nameWithOwner": "grampr/easy-bdc_bettercommand",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/grampr/easy-bdc_bettercommand",
+    "manifest": {
+      "id": "bettercommand",
+      "name": "Better Command",
+      "version": "1.0.0",
+      "author": "grampr",
+      "description": "引数・説明・Choice 対応のスラッシュコマンドブロックを追加します。",
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "minAppVersion": "1.1.0",
+      "tags": [
+        "command",
+        "slash",
+        "discord",
+        "app_commands"
+      ]
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "a421733",
+            "longId": "a421733fafdfafc178f6d16bfb76638fbd5eefec",
+            "message": "v1.0.0: Better Command plugin - remove emojis from block labels",
+            "date": "2026-02-24T11:40:43Z",
+            "author": "grampr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "yuta25912/AIChecker",
     "releases": {
       "nodes": []
@@ -763,45 +802,6 @@
             "message": "初回コミット",
             "date": "2026-02-28T06:40:53Z",
             "author": "yuta25912"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "grampr/easy-bdc_bettercommand",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/grampr/easy-bdc_bettercommand",
-    "manifest": {
-      "id": "bettercommand",
-      "name": "Better Command",
-      "version": "1.0.0",
-      "author": "grampr",
-      "description": "引数・説明・Choice 対応のスラッシュコマンドブロックを追加します。",
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "minAppVersion": "1.1.0",
-      "tags": [
-        "command",
-        "slash",
-        "discord",
-        "app_commands"
-      ]
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "a421733",
-            "longId": "a421733fafdfafc178f6d16bfb76638fbd5eefec",
-            "message": "v1.0.0: Better Command plugin - remove emojis from block labels",
-            "date": "2026-02-24T11:40:43Z",
-            "author": "grampr"
           }
         ]
       }

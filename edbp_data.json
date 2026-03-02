@@ -338,6 +338,281 @@
   },
   {
     "forkCount": 0,
+    "nameWithOwner": "yuta25912/AutoGuard",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/yuta25912/AutoGuard",
+    "manifest": {
+      "id": "AutoGuard",
+      "name": "AutoGuard",
+      "version": "1.0.0-dev1",
+      "author": "yuta25912",
+      "minAppVersion": "1.0.0",
+      "uuid": "896cd08f-da7d-47ce-bfda-1d1c7e52999f",
+      "description": "NGワード検出・警告管理・招待リンク検出など、サーバーの治安を自動で守るモデレーションブロックを追加します。",
+      "icon": "🛡️",
+      "tags": [
+        "utility",
+        "moderation"
+      ],
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "repo": "https://github.com/yuta25912/AutoGuard"
+    },
+    "branches": [
+      {
+        "name": "master",
+        "commits": [
+          {
+            "shortId": "2b7797a",
+            "longId": "2b7797a388bafdc2cca2850cc49466ca55ab616a",
+            "message": "Add License",
+            "date": "2026-02-21T22:20:21Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "17539c7",
+            "longId": "17539c729194509a86341093203f0a80a6271ef1",
+            "message": "1.0.0-fix1(plugin.jsアップデート)",
+            "date": "2026-02-21T22:19:10Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "cead2bb",
+            "longId": "cead2bb8764c4b7064de025fc5252d1143f382d5",
+            "message": "初回コミット",
+            "date": "2026-02-19T22:35:01Z",
+            "author": "SWTBSYUT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "yuta25912/AIChecker",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/yuta25912/AIChecker",
+    "manifest": {
+      "id": "ai-checker",
+      "name": "AIChecker",
+      "version": "1.0.0-dev16",
+      "author": "yuta25912",
+      "description": "WebLLMを使用してブロックコードのレビューを行うAIアシスタントです。",
+      "affectsStyle": true,
+      "affectsBlocks": false,
+      "minAppVersion": "1.1.0"
+    },
+    "branches": [
+      {
+        "name": "master",
+        "commits": [
+          {
+            "shortId": "c354147",
+            "longId": "c354147e8f58996aa24c5f2f60d9f682d88762d7",
+            "message": "1.0.0-dev16(修正)",
+            "date": "2026-02-28T10:00:07Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "f5f74d7",
+            "longId": "f5f74d760525decd0041f71ca2c968957dd0ef6e",
+            "message": "1.0.0-dev15(修正+α)",
+            "date": "2026-02-28T09:54:36Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "114c286",
+            "longId": "114c286d16611dfe9d127dd23723ac09a6a7cd2e",
+            "message": "1.0.0-dev14(GUI修正など)",
+            "date": "2026-02-28T09:46:08Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "8f975bb",
+            "longId": "8f975bb681dba463fd0291a3acb1c7ceefa6175d",
+            "message": "1.0.0-dev13(プロンプト修正など)",
+            "date": "2026-02-28T09:42:26Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "706d9a1",
+            "longId": "706d9a13ba9d6074276a1e1b8d6fc05176f09885",
+            "message": "1.0.0-dev12",
+            "date": "2026-02-28T09:09:20Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "e5f8512",
+            "longId": "e5f8512955d2535af0d1498f174cb90f8ccc7c0a",
+            "message": "1.0.0-dev10",
+            "date": "2026-02-28T08:57:59Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "71ee188",
+            "longId": "71ee1889aafb5db24989d78130bc0f04de860c84",
+            "message": "1.0.0-dev9(修正)",
+            "date": "2026-02-28T08:05:37Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "46040c0",
+            "longId": "46040c0ccd28985fa4ac332a7ca3157ec9f7d635",
+            "message": "1.0.0-dev8(修正)",
+            "date": "2026-02-28T08:02:11Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "6c6e541",
+            "longId": "6c6e5418a416ed44716fbdbb492fa09c543e984a",
+            "message": "1.0.0-dev7(GUI修正)",
+            "date": "2026-02-28T07:57:01Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "b8012f3",
+            "longId": "b8012f3ce02bcba3ecaeb25f662a6efee0630ed4",
+            "message": "1.0.0-dev6",
+            "date": "2026-02-28T07:47:19Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "533be6a",
+            "longId": "533be6a464dc6d1fa06692a4725a8602e381b64f",
+            "message": "1.0.0-dev5",
+            "date": "2026-02-28T07:41:59Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "7749327",
+            "longId": "77493274343faa0524f5bfc50dfdb26241012dda",
+            "message": "1.0.0-dev4(修正)",
+            "date": "2026-02-28T07:38:13Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "478025d",
+            "longId": "478025d39fb712ed85deaec853cc432ac54d0298",
+            "message": "Update manifest version to 1.1.0",
+            "date": "2026-02-28T07:37:09Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "7f6907f",
+            "longId": "7f6907f2728795e6cb4c366bb9627adfab8ccf24",
+            "message": "Migrate to WebLLM with Gemma 2 2B",
+            "date": "2026-02-28T07:36:43Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "5afc7c3",
+            "longId": "5afc7c3261228e2068feaba2bd3992024fa005f5",
+            "message": "1.0.0-dev1",
+            "date": "2026-02-28T07:31:08Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "e1e8217",
+            "longId": "e1e8217aeb91e6b7ea6a43d7e910da8b47d135a7",
+            "message": "初回コミット",
+            "date": "2026-02-28T06:40:53Z",
+            "author": "yuta25912"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "grampr/easy-bdc_bettercommand",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/grampr/easy-bdc_bettercommand",
+    "manifest": {
+      "id": "bettercommand",
+      "name": "Better Command",
+      "version": "1.0.0",
+      "author": "grampr",
+      "description": "引数・説明・Choice 対応のスラッシュコマンドブロックを追加します。",
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "minAppVersion": "1.1.0",
+      "tags": [
+        "command",
+        "slash",
+        "discord",
+        "app_commands"
+      ]
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "a421733",
+            "longId": "a421733fafdfafc178f6d16bfb76638fbd5eefec",
+            "message": "v1.0.0: Better Command plugin - remove emojis from block labels",
+            "date": "2026-02-24T11:40:43Z",
+            "author": "grampr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "appipinopi/SQL-Generator-Viewer",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/appipinopi/SQL-Generator-Viewer",
+    "manifest": {
+      "name": "SQL Generator & Viewer",
+      "author": "EDBPlugin AI",
+      "version": "1.0.0",
+      "description": "SQLクエリの生成とリアルタイム閲覧、ヘルプ表示機能を備えた高度なプラグインです。",
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "isCustom": false,
+      "uuid": "edbp-EDBPAI-SQL",
+      "id": "sql-generator-&-viewer",
+      "updateDate": "2026-02-11",
+      "installedFrom": 0,
+      "trustLevel": null
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "de5f459",
+            "longId": "de5f459c2aaebb409f35b4da43d63990c9c69322",
+            "message": "Create plugins.js",
+            "date": "2026-02-11T13:33:32Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "5d06440",
+            "longId": "5d0644092732ccb949e0604604bf576a8d92071e",
+            "message": "Create manifest.json",
+            "date": "2026-02-11T13:32:58Z",
+            "author": "appipinopi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "appipinopi/Plugin-test",
     "releases": {
       "nodes": []
@@ -386,52 +661,124 @@
   },
   {
     "forkCount": 0,
-    "nameWithOwner": "yuta25912/AutoGuard",
+    "nameWithOwner": "yuta25912/CheckStatus",
     "releases": {
-      "nodes": []
+      "nodes": [
+        {
+          "name": "1.0.0",
+          "publishedAt": "2026-02-16T12:22:32Z",
+          "tagName": "1.0.0"
+        }
+      ]
     },
     "stargazerCount": 0,
-    "url": "https://github.com/yuta25912/AutoGuard",
+    "url": "https://github.com/yuta25912/CheckStatus",
     "manifest": {
-      "id": "AutoGuard",
-      "name": "AutoGuard",
-      "version": "1.0.0-dev1",
+      "id": "CheckStatus",
+      "name": "CheckStatus",
+      "version": "1.0.1",
       "author": "yuta25912",
-      "minAppVersion": "1.0.0",
-      "uuid": "896cd08f-da7d-47ce-bfda-1d1c7e52999f",
-      "description": "NGワード検出・警告管理・招待リンク検出など、サーバーの治安を自動で守るモデレーションブロックを追加します。",
-      "icon": "🛡️",
+      "minAppVersion": "1.1.0",
+      "uuid": "b5cbde17-1be1-4d86-9e3e-fb998626e9e5",
+      "description": "ボットのCPU使用率、メモリ、稼働時間、Pingなどの詳細なステータスを取得できるブロックを追加します。",
+      "icon": "📊",
       "tags": [
         "utility",
-        "moderation"
+        "status"
       ],
       "affectsStyle": false,
       "affectsBlocks": true,
-      "repo": "https://github.com/yuta25912/AutoGuard"
+      "repo": "https://github.com/yuta25912/CheckStatus",
+      "pipInstall": [
+        "psutil"
+      ]
     },
     "branches": [
       {
         "name": "master",
         "commits": [
           {
-            "shortId": "2b7797a",
-            "longId": "2b7797a388bafdc2cca2850cc49466ca55ab616a",
+            "shortId": "fa121cd",
+            "longId": "fa121cdf13dd3d1b1d30446c139f69ae63592873",
+            "message": "1.0.0-fix9(Manifest1.1.0対応)",
+            "date": "2026-02-21T01:44:47Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "bc0fdc4",
+            "longId": "bc0fdc4028af7226a3655163b96e70466fc85c9d",
+            "message": "1.0.0-fix8(manifest.jsonの形式アップデート2)",
+            "date": "2026-02-19T07:33:53Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "efba61e",
+            "longId": "efba61e6428c5788527a5fc174d13e4fd2b172b1",
             "message": "Add License",
-            "date": "2026-02-21T22:20:21Z",
+            "date": "2026-02-18T11:12:44Z",
             "author": "yuta25912"
           },
           {
-            "shortId": "17539c7",
-            "longId": "17539c729194509a86341093203f0a80a6271ef1",
-            "message": "1.0.0-fix1(plugin.jsアップデート)",
-            "date": "2026-02-21T22:19:10Z",
-            "author": "yuta25912"
+            "shortId": "8698f80",
+            "longId": "8698f80532d46a67ba669b1eff7dd9a6a0795e56",
+            "message": "1.0.0-fix7(manifest.jsonの形式アップデートのため)",
+            "date": "2026-02-18T08:42:47Z",
+            "author": "SWTBSYUT"
           },
           {
-            "shortId": "cead2bb",
-            "longId": "cead2bb8764c4b7064de025fc5252d1143f382d5",
+            "shortId": "783d3eb",
+            "longId": "783d3eb9a96693d0ceed85a0d275261ae0a87035",
+            "message": "1.0.0-fix2(カテゴリー名変更)",
+            "date": "2026-02-16T22:51:51Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "e1e4427",
+            "longId": "e1e442710265cbdc514555cd51824b928a0c04cb",
+            "message": "README-fix2",
+            "date": "2026-02-16T12:35:56Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "a1dfa30",
+            "longId": "a1dfa30cf346726e6ab362d3da5ba91296ceff08",
+            "message": "README-fix1",
+            "date": "2026-02-16T12:29:13Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "f03f937",
+            "longId": "f03f937ad32f8b97b1bde473e992ee3a1bef01a6",
+            "message": "1.0.0-fix2",
+            "date": "2026-02-16T11:46:51Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "edaeedc",
+            "longId": "edaeedc00f744e38f24091dfd46bd1c496bd529c",
+            "message": "1.0.0-fix1",
+            "date": "2026-02-16T11:44:00Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "7d550b6",
+            "longId": "7d550b664af9e30986f2b39b3a45e50225a07529",
+            "message": "1.0.0(1.0.0-dev1と変更なし)",
+            "date": "2026-02-16T11:37:01Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "cc8e503",
+            "longId": "cc8e503edfe9b34e6c475befd47999534a6bf9a1",
+            "message": "1.0.0-dev1",
+            "date": "2026-02-16T11:34:58Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "fbcfea2",
+            "longId": "fbcfea205872c38d048de9cb1a51aec7f9ba206c",
             "message": "初回コミット",
-            "date": "2026-02-19T22:35:01Z",
+            "date": "2026-02-16T11:24:14Z",
             "author": "SWTBSYUT"
           }
         ]
@@ -632,346 +979,105 @@
   },
   {
     "forkCount": 0,
-    "nameWithOwner": "yuta25912/AIChecker",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/yuta25912/AIChecker",
-    "manifest": {
-      "id": "ai-checker",
-      "name": "AIChecker",
-      "version": "1.0.0-dev16",
-      "author": "yuta25912",
-      "description": "WebLLMを使用してブロックコードのレビューを行うAIアシスタントです。",
-      "affectsStyle": true,
-      "affectsBlocks": false,
-      "minAppVersion": "1.1.0"
-    },
-    "branches": [
-      {
-        "name": "master",
-        "commits": [
-          {
-            "shortId": "c354147",
-            "longId": "c354147e8f58996aa24c5f2f60d9f682d88762d7",
-            "message": "1.0.0-dev16(修正)",
-            "date": "2026-02-28T10:00:07Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "f5f74d7",
-            "longId": "f5f74d760525decd0041f71ca2c968957dd0ef6e",
-            "message": "1.0.0-dev15(修正+α)",
-            "date": "2026-02-28T09:54:36Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "114c286",
-            "longId": "114c286d16611dfe9d127dd23723ac09a6a7cd2e",
-            "message": "1.0.0-dev14(GUI修正など)",
-            "date": "2026-02-28T09:46:08Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "8f975bb",
-            "longId": "8f975bb681dba463fd0291a3acb1c7ceefa6175d",
-            "message": "1.0.0-dev13(プロンプト修正など)",
-            "date": "2026-02-28T09:42:26Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "706d9a1",
-            "longId": "706d9a13ba9d6074276a1e1b8d6fc05176f09885",
-            "message": "1.0.0-dev12",
-            "date": "2026-02-28T09:09:20Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "e5f8512",
-            "longId": "e5f8512955d2535af0d1498f174cb90f8ccc7c0a",
-            "message": "1.0.0-dev10",
-            "date": "2026-02-28T08:57:59Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "71ee188",
-            "longId": "71ee1889aafb5db24989d78130bc0f04de860c84",
-            "message": "1.0.0-dev9(修正)",
-            "date": "2026-02-28T08:05:37Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "46040c0",
-            "longId": "46040c0ccd28985fa4ac332a7ca3157ec9f7d635",
-            "message": "1.0.0-dev8(修正)",
-            "date": "2026-02-28T08:02:11Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "6c6e541",
-            "longId": "6c6e5418a416ed44716fbdbb492fa09c543e984a",
-            "message": "1.0.0-dev7(GUI修正)",
-            "date": "2026-02-28T07:57:01Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "b8012f3",
-            "longId": "b8012f3ce02bcba3ecaeb25f662a6efee0630ed4",
-            "message": "1.0.0-dev6",
-            "date": "2026-02-28T07:47:19Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "533be6a",
-            "longId": "533be6a464dc6d1fa06692a4725a8602e381b64f",
-            "message": "1.0.0-dev5",
-            "date": "2026-02-28T07:41:59Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "7749327",
-            "longId": "77493274343faa0524f5bfc50dfdb26241012dda",
-            "message": "1.0.0-dev4(修正)",
-            "date": "2026-02-28T07:38:13Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "478025d",
-            "longId": "478025d39fb712ed85deaec853cc432ac54d0298",
-            "message": "Update manifest version to 1.1.0",
-            "date": "2026-02-28T07:37:09Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "7f6907f",
-            "longId": "7f6907f2728795e6cb4c366bb9627adfab8ccf24",
-            "message": "Migrate to WebLLM with Gemma 2 2B",
-            "date": "2026-02-28T07:36:43Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "5afc7c3",
-            "longId": "5afc7c3261228e2068feaba2bd3992024fa005f5",
-            "message": "1.0.0-dev1",
-            "date": "2026-02-28T07:31:08Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "e1e8217",
-            "longId": "e1e8217aeb91e6b7ea6a43d7e910da8b47d135a7",
-            "message": "初回コミット",
-            "date": "2026-02-28T06:40:53Z",
-            "author": "yuta25912"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "appipinopi/SQL-Generator-Viewer",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/appipinopi/SQL-Generator-Viewer",
-    "manifest": {
-      "name": "SQL Generator & Viewer",
-      "author": "EDBPlugin AI",
-      "version": "1.0.0",
-      "description": "SQLクエリの生成とリアルタイム閲覧、ヘルプ表示機能を備えた高度なプラグインです。",
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "isCustom": false,
-      "uuid": "edbp-EDBPAI-SQL",
-      "id": "sql-generator-&-viewer",
-      "updateDate": "2026-02-11",
-      "installedFrom": 0,
-      "trustLevel": null
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "de5f459",
-            "longId": "de5f459c2aaebb409f35b4da43d63990c9c69322",
-            "message": "Create plugins.js",
-            "date": "2026-02-11T13:33:32Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "5d06440",
-            "longId": "5d0644092732ccb949e0604604bf576a8d92071e",
-            "message": "Create manifest.json",
-            "date": "2026-02-11T13:32:58Z",
-            "author": "appipinopi"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "grampr/easy-bdc_bettercommand",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/grampr/easy-bdc_bettercommand",
-    "manifest": {
-      "id": "bettercommand",
-      "name": "Better Command",
-      "version": "1.0.0",
-      "author": "grampr",
-      "description": "引数・説明・Choice 対応のスラッシュコマンドブロックを追加します。",
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "minAppVersion": "1.1.0",
-      "tags": [
-        "command",
-        "slash",
-        "discord",
-        "app_commands"
-      ]
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "a421733",
-            "longId": "a421733fafdfafc178f6d16bfb76638fbd5eefec",
-            "message": "v1.0.0: Better Command plugin - remove emojis from block labels",
-            "date": "2026-02-24T11:40:43Z",
-            "author": "grampr"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "yuta25912/CheckStatus",
+    "nameWithOwner": "appipinopi/TimeScheduler",
     "releases": {
       "nodes": [
         {
-          "name": "1.0.0",
-          "publishedAt": "2026-02-16T12:22:32Z",
+          "name": "V1.1.0",
+          "publishedAt": "2026-02-09T09:23:12Z",
+          "tagName": "1.1.0"
+        },
+        {
+          "name": "V1.0.0",
+          "publishedAt": "2026-02-08T11:00:24Z",
           "tagName": "1.0.0"
         }
       ]
     },
     "stargazerCount": 0,
-    "url": "https://github.com/yuta25912/CheckStatus",
+    "url": "https://github.com/appipinopi/TimeScheduler",
     "manifest": {
-      "id": "CheckStatus",
-      "name": "CheckStatus",
-      "version": "1.0.1",
-      "author": "yuta25912",
-      "minAppVersion": "1.1.0",
-      "uuid": "b5cbde17-1be1-4d86-9e3e-fb998626e9e5",
-      "description": "ボットのCPU使用率、メモリ、稼働時間、Pingなどの詳細なステータスを取得できるブロックを追加します。",
-      "icon": "📊",
-      "tags": [
-        "utility",
-        "status"
-      ],
+      "name": "Time & Scheduler",
+      "author": "appipinopi",
+      "version": "1.1.0",
+      "description": "Botに定期実行や予約投稿、遅延処理などの時間制御機能を追加します。",
       "affectsStyle": false,
       "affectsBlocks": true,
-      "repo": "https://github.com/yuta25912/CheckStatus",
-      "pipInstall": [
-        "psutil"
-      ]
+      "repo": "https://github.com/appipinopi/TimeScheduler",
+      "uuid": "appipinopi-scheduler-001",
+      "minAppVersion": "1.0.0"
     },
     "branches": [
       {
-        "name": "master",
+        "name": "main",
         "commits": [
           {
-            "shortId": "fa121cd",
-            "longId": "fa121cdf13dd3d1b1d30446c139f69ae63592873",
-            "message": "1.0.0-fix9(Manifest1.1.0対応)",
-            "date": "2026-02-21T01:44:47Z",
-            "author": "yuta25912"
+            "shortId": "1187e89",
+            "longId": "1187e899584d8603bfc623dd5facf3df6a44d399",
+            "message": "manifest.json を更新",
+            "date": "2026-02-18T14:13:18Z",
+            "author": "appipinopi"
           },
           {
-            "shortId": "bc0fdc4",
-            "longId": "bc0fdc4028af7226a3655163b96e70466fc85c9d",
-            "message": "1.0.0-fix8(manifest.jsonの形式アップデート2)",
-            "date": "2026-02-19T07:33:53Z",
-            "author": "SWTBSYUT"
+            "shortId": "e38aa86",
+            "longId": "e38aa861583b8038962728734c84f1aa7229c1a0",
+            "message": "Update manifest.json",
+            "date": "2026-02-09T09:21:18Z",
+            "author": "appipinopi"
           },
           {
-            "shortId": "efba61e",
-            "longId": "efba61e6428c5788527a5fc174d13e4fd2b172b1",
-            "message": "Add License",
-            "date": "2026-02-18T11:12:44Z",
-            "author": "yuta25912"
+            "shortId": "7d24560",
+            "longId": "7d24560169dbc8a479d9816c9fc002a52c037002",
+            "message": "Update manifest.json",
+            "date": "2026-02-09T09:07:30Z",
+            "author": "appipinopi"
           },
           {
-            "shortId": "8698f80",
-            "longId": "8698f80532d46a67ba669b1eff7dd9a6a0795e56",
-            "message": "1.0.0-fix7(manifest.jsonの形式アップデートのため)",
-            "date": "2026-02-18T08:42:47Z",
-            "author": "SWTBSYUT"
+            "shortId": "bfc77d5",
+            "longId": "bfc77d5d0a123d822e48d2fb666e268722e0ed2e",
+            "message": "Update manifest.json",
+            "date": "2026-02-09T09:05:15Z",
+            "author": "appipinopi"
           },
           {
-            "shortId": "783d3eb",
-            "longId": "783d3eb9a96693d0ceed85a0d275261ae0a87035",
-            "message": "1.0.0-fix2(カテゴリー名変更)",
-            "date": "2026-02-16T22:51:51Z",
-            "author": "SWTBSYUT"
+            "shortId": "e73651d",
+            "longId": "e73651db004b527b5a44a3f25f4b6625fedd6ff2",
+            "message": "Update README.md",
+            "date": "2026-02-08T10:59:33Z",
+            "author": "appipinopi"
           },
           {
-            "shortId": "e1e4427",
-            "longId": "e1e442710265cbdc514555cd51824b928a0c04cb",
-            "message": "README-fix2",
-            "date": "2026-02-16T12:35:56Z",
-            "author": "SWTBSYUT"
+            "shortId": "b9c03ea",
+            "longId": "b9c03ea8f10dff25415535f7a997c85460a145f6",
+            "message": "Add files via upload",
+            "date": "2026-02-08T10:58:59Z",
+            "author": "appipinopi"
           },
           {
-            "shortId": "a1dfa30",
-            "longId": "a1dfa30cf346726e6ab362d3da5ba91296ceff08",
-            "message": "README-fix1",
-            "date": "2026-02-16T12:29:13Z",
-            "author": "SWTBSYUT"
+            "shortId": "3002a36",
+            "longId": "3002a3677df26da8fcfc4ba17c13a3b79c7bb941",
+            "message": "Initial commit",
+            "date": "2026-02-08T10:58:38Z",
+            "author": "appipinopi"
+          }
+        ]
+      },
+      {
+        "name": "translatabot/config",
+        "commits": [
+          {
+            "shortId": "9fd917b",
+            "longId": "9fd917b2b579325d659de1481a99a067e2b9282a",
+            "message": "[translatabot] Add configuration file",
+            "date": "2026-02-08T10:58:43Z",
+            "author": "translatabotai[bot]"
           },
           {
-            "shortId": "f03f937",
-            "longId": "f03f937ad32f8b97b1bde473e992ee3a1bef01a6",
-            "message": "1.0.0-fix2",
-            "date": "2026-02-16T11:46:51Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "edaeedc",
-            "longId": "edaeedc00f744e38f24091dfd46bd1c496bd529c",
-            "message": "1.0.0-fix1",
-            "date": "2026-02-16T11:44:00Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "7d550b6",
-            "longId": "7d550b664af9e30986f2b39b3a45e50225a07529",
-            "message": "1.0.0(1.0.0-dev1と変更なし)",
-            "date": "2026-02-16T11:37:01Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "cc8e503",
-            "longId": "cc8e503edfe9b34e6c475befd47999534a6bf9a1",
-            "message": "1.0.0-dev1",
-            "date": "2026-02-16T11:34:58Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "fbcfea2",
-            "longId": "fbcfea205872c38d048de9cb1a51aec7f9ba206c",
-            "message": "初回コミット",
-            "date": "2026-02-16T11:24:14Z",
-            "author": "SWTBSYUT"
+            "shortId": "3002a36",
+            "longId": "3002a3677df26da8fcfc4ba17c13a3b79c7bb941",
+            "message": "Initial commit",
+            "date": "2026-02-08T10:58:38Z",
+            "author": "appipinopi"
           }
         ]
       }
@@ -1086,112 +1192,6 @@
             "message": "1.0.0-dev1",
             "date": "2026-02-16T22:22:58Z",
             "author": "SWTBSYUT"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "appipinopi/TimeScheduler",
-    "releases": {
-      "nodes": [
-        {
-          "name": "V1.1.0",
-          "publishedAt": "2026-02-09T09:23:12Z",
-          "tagName": "1.1.0"
-        },
-        {
-          "name": "V1.0.0",
-          "publishedAt": "2026-02-08T11:00:24Z",
-          "tagName": "1.0.0"
-        }
-      ]
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/appipinopi/TimeScheduler",
-    "manifest": {
-      "name": "Time & Scheduler",
-      "author": "appipinopi",
-      "version": "1.1.0",
-      "description": "Botに定期実行や予約投稿、遅延処理などの時間制御機能を追加します。",
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "repo": "https://github.com/appipinopi/TimeScheduler",
-      "uuid": "appipinopi-scheduler-001",
-      "minAppVersion": "1.0.0"
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "1187e89",
-            "longId": "1187e899584d8603bfc623dd5facf3df6a44d399",
-            "message": "manifest.json を更新",
-            "date": "2026-02-18T14:13:18Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "e38aa86",
-            "longId": "e38aa861583b8038962728734c84f1aa7229c1a0",
-            "message": "Update manifest.json",
-            "date": "2026-02-09T09:21:18Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "7d24560",
-            "longId": "7d24560169dbc8a479d9816c9fc002a52c037002",
-            "message": "Update manifest.json",
-            "date": "2026-02-09T09:07:30Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "bfc77d5",
-            "longId": "bfc77d5d0a123d822e48d2fb666e268722e0ed2e",
-            "message": "Update manifest.json",
-            "date": "2026-02-09T09:05:15Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "e73651d",
-            "longId": "e73651db004b527b5a44a3f25f4b6625fedd6ff2",
-            "message": "Update README.md",
-            "date": "2026-02-08T10:59:33Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "b9c03ea",
-            "longId": "b9c03ea8f10dff25415535f7a997c85460a145f6",
-            "message": "Add files via upload",
-            "date": "2026-02-08T10:58:59Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "3002a36",
-            "longId": "3002a3677df26da8fcfc4ba17c13a3b79c7bb941",
-            "message": "Initial commit",
-            "date": "2026-02-08T10:58:38Z",
-            "author": "appipinopi"
-          }
-        ]
-      },
-      {
-        "name": "translatabot/config",
-        "commits": [
-          {
-            "shortId": "9fd917b",
-            "longId": "9fd917b2b579325d659de1481a99a067e2b9282a",
-            "message": "[translatabot] Add configuration file",
-            "date": "2026-02-08T10:58:43Z",
-            "author": "translatabotai[bot]"
-          },
-          {
-            "shortId": "3002a36",
-            "longId": "3002a3677df26da8fcfc4ba17c13a3b79c7bb941",
-            "message": "Initial commit",
-            "date": "2026-02-08T10:58:38Z",
-            "author": "appipinopi"
           }
         ]
       }

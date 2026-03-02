@@ -338,6 +338,99 @@
   },
   {
     "forkCount": 0,
+    "nameWithOwner": "yuta25912/AutoGuard",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/yuta25912/AutoGuard",
+    "manifest": {
+      "id": "AutoGuard",
+      "name": "AutoGuard",
+      "version": "1.0.0-dev1",
+      "author": "yuta25912",
+      "minAppVersion": "1.0.0",
+      "uuid": "896cd08f-da7d-47ce-bfda-1d1c7e52999f",
+      "description": "NGワード検出・警告管理・招待リンク検出など、サーバーの治安を自動で守るモデレーションブロックを追加します。",
+      "icon": "🛡️",
+      "tags": [
+        "utility",
+        "moderation"
+      ],
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "repo": "https://github.com/yuta25912/AutoGuard"
+    },
+    "branches": [
+      {
+        "name": "master",
+        "commits": [
+          {
+            "shortId": "2b7797a",
+            "longId": "2b7797a388bafdc2cca2850cc49466ca55ab616a",
+            "message": "Add License",
+            "date": "2026-02-21T22:20:21Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "17539c7",
+            "longId": "17539c729194509a86341093203f0a80a6271ef1",
+            "message": "1.0.0-fix1(plugin.jsアップデート)",
+            "date": "2026-02-21T22:19:10Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "cead2bb",
+            "longId": "cead2bb8764c4b7064de025fc5252d1143f382d5",
+            "message": "初回コミット",
+            "date": "2026-02-19T22:35:01Z",
+            "author": "SWTBSYUT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "grampr/easy-bdc_bettercommand",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/grampr/easy-bdc_bettercommand",
+    "manifest": {
+      "id": "bettercommand",
+      "name": "Better Command",
+      "version": "1.0.0",
+      "author": "grampr",
+      "description": "引数・説明・Choice 対応のスラッシュコマンドブロックを追加します。",
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "minAppVersion": "1.1.0",
+      "tags": [
+        "command",
+        "slash",
+        "discord",
+        "app_commands"
+      ]
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "a421733",
+            "longId": "a421733fafdfafc178f6d16bfb76638fbd5eefec",
+            "message": "v1.0.0: Better Command plugin - remove emojis from block labels",
+            "date": "2026-02-24T11:40:43Z",
+            "author": "grampr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "yuta25912/AIChecker",
     "releases": {
       "nodes": []
@@ -469,99 +562,6 @@
             "message": "初回コミット",
             "date": "2026-02-28T06:40:53Z",
             "author": "yuta25912"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "yuta25912/AutoGuard",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/yuta25912/AutoGuard",
-    "manifest": {
-      "id": "AutoGuard",
-      "name": "AutoGuard",
-      "version": "1.0.0-dev1",
-      "author": "yuta25912",
-      "minAppVersion": "1.0.0",
-      "uuid": "896cd08f-da7d-47ce-bfda-1d1c7e52999f",
-      "description": "NGワード検出・警告管理・招待リンク検出など、サーバーの治安を自動で守るモデレーションブロックを追加します。",
-      "icon": "🛡️",
-      "tags": [
-        "utility",
-        "moderation"
-      ],
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "repo": "https://github.com/yuta25912/AutoGuard"
-    },
-    "branches": [
-      {
-        "name": "master",
-        "commits": [
-          {
-            "shortId": "2b7797a",
-            "longId": "2b7797a388bafdc2cca2850cc49466ca55ab616a",
-            "message": "Add License",
-            "date": "2026-02-21T22:20:21Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "17539c7",
-            "longId": "17539c729194509a86341093203f0a80a6271ef1",
-            "message": "1.0.0-fix1(plugin.jsアップデート)",
-            "date": "2026-02-21T22:19:10Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "cead2bb",
-            "longId": "cead2bb8764c4b7064de025fc5252d1143f382d5",
-            "message": "初回コミット",
-            "date": "2026-02-19T22:35:01Z",
-            "author": "SWTBSYUT"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "grampr/easy-bdc_bettercommand",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/grampr/easy-bdc_bettercommand",
-    "manifest": {
-      "id": "bettercommand",
-      "name": "Better Command",
-      "version": "1.0.0",
-      "author": "grampr",
-      "description": "引数・説明・Choice 対応のスラッシュコマンドブロックを追加します。",
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "minAppVersion": "1.1.0",
-      "tags": [
-        "command",
-        "slash",
-        "discord",
-        "app_commands"
-      ]
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "a421733",
-            "longId": "a421733fafdfafc178f6d16bfb76638fbd5eefec",
-            "message": "v1.0.0: Better Command plugin - remove emojis from block labels",
-            "date": "2026-02-24T11:40:43Z",
-            "author": "grampr"
           }
         ]
       }

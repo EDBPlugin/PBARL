@@ -386,6 +386,50 @@
   },
   {
     "forkCount": 0,
+    "nameWithOwner": "appipinopi/SQL-Generator-Viewer",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/appipinopi/SQL-Generator-Viewer",
+    "manifest": {
+      "name": "SQL Generator & Viewer",
+      "author": "EDBPlugin AI",
+      "version": "1.0.0",
+      "description": "SQLクエリの生成とリアルタイム閲覧、ヘルプ表示機能を備えた高度なプラグインです。",
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "isCustom": false,
+      "uuid": "edbp-EDBPAI-SQL",
+      "id": "sql-generator-&-viewer",
+      "updateDate": "2026-02-11",
+      "installedFrom": 0,
+      "trustLevel": null
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "de5f459",
+            "longId": "de5f459c2aaebb409f35b4da43d63990c9c69322",
+            "message": "Create plugins.js",
+            "date": "2026-02-11T13:33:32Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "5d06440",
+            "longId": "5d0644092732ccb949e0604604bf576a8d92071e",
+            "message": "Create manifest.json",
+            "date": "2026-02-11T13:32:58Z",
+            "author": "appipinopi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "appipinopi/Malicious-Test-Plugin",
     "releases": {
       "nodes": [
@@ -578,50 +622,6 @@
   },
   {
     "forkCount": 0,
-    "nameWithOwner": "appipinopi/SQL-Generator-Viewer",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/appipinopi/SQL-Generator-Viewer",
-    "manifest": {
-      "name": "SQL Generator & Viewer",
-      "author": "EDBPlugin AI",
-      "version": "1.0.0",
-      "description": "SQLクエリの生成とリアルタイム閲覧、ヘルプ表示機能を備えた高度なプラグインです。",
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "isCustom": false,
-      "uuid": "edbp-EDBPAI-SQL",
-      "id": "sql-generator-&-viewer",
-      "updateDate": "2026-02-11",
-      "installedFrom": 0,
-      "trustLevel": null
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "de5f459",
-            "longId": "de5f459c2aaebb409f35b4da43d63990c9c69322",
-            "message": "Create plugins.js",
-            "date": "2026-02-11T13:33:32Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "5d06440",
-            "longId": "5d0644092732ccb949e0604604bf576a8d92071e",
-            "message": "Create manifest.json",
-            "date": "2026-02-11T13:32:58Z",
-            "author": "appipinopi"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
     "nameWithOwner": "yuta25912/CheckStatus",
     "releases": {
       "nodes": [
@@ -748,45 +748,6 @@
   },
   {
     "forkCount": 0,
-    "nameWithOwner": "grampr/easy-bdc_bettercommand",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/grampr/easy-bdc_bettercommand",
-    "manifest": {
-      "id": "bettercommand",
-      "name": "Better Command",
-      "version": "1.0.0",
-      "author": "grampr",
-      "description": "引数・説明・Choice 対応のスラッシュコマンドブロックを追加します。",
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "minAppVersion": "1.1.0",
-      "tags": [
-        "command",
-        "slash",
-        "discord",
-        "app_commands"
-      ]
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "a421733",
-            "longId": "a421733fafdfafc178f6d16bfb76638fbd5eefec",
-            "message": "v1.0.0: Better Command plugin - remove emojis from block labels",
-            "date": "2026-02-24T11:40:43Z",
-            "author": "grampr"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
     "nameWithOwner": "yuta25912/AutoGuard",
     "releases": {
       "nodes": []
@@ -834,6 +795,45 @@
             "message": "初回コミット",
             "date": "2026-02-19T22:35:01Z",
             "author": "SWTBSYUT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "grampr/easy-bdc_bettercommand",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/grampr/easy-bdc_bettercommand",
+    "manifest": {
+      "id": "bettercommand",
+      "name": "Better Command",
+      "version": "1.0.0",
+      "author": "grampr",
+      "description": "引数・説明・Choice 対応のスラッシュコマンドブロックを追加します。",
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "minAppVersion": "1.1.0",
+      "tags": [
+        "command",
+        "slash",
+        "discord",
+        "app_commands"
+      ]
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "a421733",
+            "longId": "a421733fafdfafc178f6d16bfb76638fbd5eefec",
+            "message": "v1.0.0: Better Command plugin - remove emojis from block labels",
+            "date": "2026-02-24T11:40:43Z",
+            "author": "grampr"
           }
         ]
       }

@@ -1206,6 +1206,81 @@
   },
   {
     "forkCount": 0,
+    "nameWithOwner": "EDBPlugin/Templates-Plugin",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/EDBPlugin/Templates-Plugin",
+    "manifest": {
+      "id": "my-custom-plugin",
+      "name": "サンプルプラグイン",
+      "version": "1.0.0",
+      "author": "あなたの名前",
+      "description": "このプラグインは新しいコマンドブロックを追加します。",
+      "icon": "https://example.com/icon.png",
+      "tags": [
+        "utility",
+        "commands"
+      ],
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "repo": "https://github.com/YourName/my-plugin",
+      "externalPackages": [
+        "requests",
+        "aiohttp"
+      ],
+      "pipInstall": [
+        "discord.py[voice]",
+        "aiohttp"
+      ],
+      "requiredPlugins": [
+        "core-utils-plugin"
+      ],
+      "api": {
+        "name": "Example API",
+        "baseUrl": "https://api.example.com"
+      },
+      "minAppVersion": "1.1.0"
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "b42ab11",
+            "longId": "b42ab11d54a84fbdbaa88c4e69dcba9ff8607322",
+            "message": "Update manifest.json",
+            "date": "2026-02-21T12:34:50Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "7773b7b",
+            "longId": "7773b7b874bc0d2214e9cc71cfc3536f89468fd5",
+            "message": "Create README.md",
+            "date": "2026-02-18T08:03:40Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "4550cd6",
+            "longId": "4550cd6427c8c0cdda62b30b4f7d02c9c3d600a1",
+            "message": "Create plugin.js",
+            "date": "2026-02-18T08:02:01Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "142a34b",
+            "longId": "142a34b7b862b7436367123fb637c1dae9c796f5",
+            "message": "Create manifest.json",
+            "date": "2026-02-18T08:01:31Z",
+            "author": "appipinopi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "yuta25912/VCManager",
     "releases": {
       "nodes": []
@@ -1323,81 +1398,6 @@
             "message": "1.0.0-dev1",
             "date": "2026-02-16T22:23:06Z",
             "author": "SWTBSYUT"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "EDBPlugin/Templates-Plugin",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/EDBPlugin/Templates-Plugin",
-    "manifest": {
-      "id": "my-custom-plugin",
-      "name": "サンプルプラグイン",
-      "version": "1.0.0",
-      "author": "あなたの名前",
-      "description": "このプラグインは新しいコマンドブロックを追加します。",
-      "icon": "https://example.com/icon.png",
-      "tags": [
-        "utility",
-        "commands"
-      ],
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "repo": "https://github.com/YourName/my-plugin",
-      "externalPackages": [
-        "requests",
-        "aiohttp"
-      ],
-      "pipInstall": [
-        "discord.py[voice]",
-        "aiohttp"
-      ],
-      "requiredPlugins": [
-        "core-utils-plugin"
-      ],
-      "api": {
-        "name": "Example API",
-        "baseUrl": "https://api.example.com"
-      },
-      "minAppVersion": "1.1.0"
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "b42ab11",
-            "longId": "b42ab11d54a84fbdbaa88c4e69dcba9ff8607322",
-            "message": "Update manifest.json",
-            "date": "2026-02-21T12:34:50Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "7773b7b",
-            "longId": "7773b7b874bc0d2214e9cc71cfc3536f89468fd5",
-            "message": "Create README.md",
-            "date": "2026-02-18T08:03:40Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "4550cd6",
-            "longId": "4550cd6427c8c0cdda62b30b4f7d02c9c3d600a1",
-            "message": "Create plugin.js",
-            "date": "2026-02-18T08:02:01Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "142a34b",
-            "longId": "142a34b7b862b7436367123fb637c1dae9c796f5",
-            "message": "Create manifest.json",
-            "date": "2026-02-18T08:01:31Z",
-            "author": "appipinopi"
           }
         ]
       }

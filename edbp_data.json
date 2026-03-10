@@ -430,132 +430,6 @@
   },
   {
     "forkCount": 0,
-    "nameWithOwner": "yuta25912/CheckStatus",
-    "releases": {
-      "nodes": [
-        {
-          "name": "1.0.0",
-          "publishedAt": "2026-02-16T12:22:32Z",
-          "tagName": "1.0.0"
-        }
-      ]
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/yuta25912/CheckStatus",
-    "manifest": {
-      "id": "CheckStatus",
-      "name": "CheckStatus",
-      "version": "1.0.1",
-      "author": "yuta25912",
-      "minAppVersion": "1.1.0",
-      "uuid": "b5cbde17-1be1-4d86-9e3e-fb998626e9e5",
-      "description": "ボットのCPU使用率、メモリ、稼働時間、Pingなどの詳細なステータスを取得できるブロックを追加します。",
-      "icon": "📊",
-      "tags": [
-        "utility",
-        "status"
-      ],
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "repo": "https://github.com/yuta25912/CheckStatus",
-      "pipInstall": [
-        "psutil"
-      ]
-    },
-    "branches": [
-      {
-        "name": "master",
-        "commits": [
-          {
-            "shortId": "fa121cd",
-            "longId": "fa121cdf13dd3d1b1d30446c139f69ae63592873",
-            "message": "1.0.0-fix9(Manifest1.1.0対応)",
-            "date": "2026-02-21T01:44:47Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "bc0fdc4",
-            "longId": "bc0fdc4028af7226a3655163b96e70466fc85c9d",
-            "message": "1.0.0-fix8(manifest.jsonの形式アップデート2)",
-            "date": "2026-02-19T07:33:53Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "efba61e",
-            "longId": "efba61e6428c5788527a5fc174d13e4fd2b172b1",
-            "message": "Add License",
-            "date": "2026-02-18T11:12:44Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "8698f80",
-            "longId": "8698f80532d46a67ba669b1eff7dd9a6a0795e56",
-            "message": "1.0.0-fix7(manifest.jsonの形式アップデートのため)",
-            "date": "2026-02-18T08:42:47Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "783d3eb",
-            "longId": "783d3eb9a96693d0ceed85a0d275261ae0a87035",
-            "message": "1.0.0-fix2(カテゴリー名変更)",
-            "date": "2026-02-16T22:51:51Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "e1e4427",
-            "longId": "e1e442710265cbdc514555cd51824b928a0c04cb",
-            "message": "README-fix2",
-            "date": "2026-02-16T12:35:56Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "a1dfa30",
-            "longId": "a1dfa30cf346726e6ab362d3da5ba91296ceff08",
-            "message": "README-fix1",
-            "date": "2026-02-16T12:29:13Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "f03f937",
-            "longId": "f03f937ad32f8b97b1bde473e992ee3a1bef01a6",
-            "message": "1.0.0-fix2",
-            "date": "2026-02-16T11:46:51Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "edaeedc",
-            "longId": "edaeedc00f744e38f24091dfd46bd1c496bd529c",
-            "message": "1.0.0-fix1",
-            "date": "2026-02-16T11:44:00Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "7d550b6",
-            "longId": "7d550b664af9e30986f2b39b3a45e50225a07529",
-            "message": "1.0.0(1.0.0-dev1と変更なし)",
-            "date": "2026-02-16T11:37:01Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "cc8e503",
-            "longId": "cc8e503edfe9b34e6c475befd47999534a6bf9a1",
-            "message": "1.0.0-dev1",
-            "date": "2026-02-16T11:34:58Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "fbcfea2",
-            "longId": "fbcfea205872c38d048de9cb1a51aec7f9ba206c",
-            "message": "初回コミット",
-            "date": "2026-02-16T11:24:14Z",
-            "author": "SWTBSYUT"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
     "nameWithOwner": "yuta25912/AutoGuard",
     "releases": {
       "nodes": []
@@ -795,6 +669,132 @@
             "message": "Add files via upload",
             "date": "2026-02-11T10:59:33Z",
             "author": "appipinopi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "yuta25912/CheckStatus",
+    "releases": {
+      "nodes": [
+        {
+          "name": "1.0.0",
+          "publishedAt": "2026-02-16T12:22:32Z",
+          "tagName": "1.0.0"
+        }
+      ]
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/yuta25912/CheckStatus",
+    "manifest": {
+      "id": "CheckStatus",
+      "name": "CheckStatus",
+      "version": "1.0.1",
+      "author": "yuta25912",
+      "minAppVersion": "1.1.0",
+      "uuid": "b5cbde17-1be1-4d86-9e3e-fb998626e9e5",
+      "description": "ボットのCPU使用率、メモリ、稼働時間、Pingなどの詳細なステータスを取得できるブロックを追加します。",
+      "icon": "📊",
+      "tags": [
+        "utility",
+        "status"
+      ],
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "repo": "https://github.com/yuta25912/CheckStatus",
+      "pipInstall": [
+        "psutil"
+      ]
+    },
+    "branches": [
+      {
+        "name": "master",
+        "commits": [
+          {
+            "shortId": "fa121cd",
+            "longId": "fa121cdf13dd3d1b1d30446c139f69ae63592873",
+            "message": "1.0.0-fix9(Manifest1.1.0対応)",
+            "date": "2026-02-21T01:44:47Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "bc0fdc4",
+            "longId": "bc0fdc4028af7226a3655163b96e70466fc85c9d",
+            "message": "1.0.0-fix8(manifest.jsonの形式アップデート2)",
+            "date": "2026-02-19T07:33:53Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "efba61e",
+            "longId": "efba61e6428c5788527a5fc174d13e4fd2b172b1",
+            "message": "Add License",
+            "date": "2026-02-18T11:12:44Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "8698f80",
+            "longId": "8698f80532d46a67ba669b1eff7dd9a6a0795e56",
+            "message": "1.0.0-fix7(manifest.jsonの形式アップデートのため)",
+            "date": "2026-02-18T08:42:47Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "783d3eb",
+            "longId": "783d3eb9a96693d0ceed85a0d275261ae0a87035",
+            "message": "1.0.0-fix2(カテゴリー名変更)",
+            "date": "2026-02-16T22:51:51Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "e1e4427",
+            "longId": "e1e442710265cbdc514555cd51824b928a0c04cb",
+            "message": "README-fix2",
+            "date": "2026-02-16T12:35:56Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "a1dfa30",
+            "longId": "a1dfa30cf346726e6ab362d3da5ba91296ceff08",
+            "message": "README-fix1",
+            "date": "2026-02-16T12:29:13Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "f03f937",
+            "longId": "f03f937ad32f8b97b1bde473e992ee3a1bef01a6",
+            "message": "1.0.0-fix2",
+            "date": "2026-02-16T11:46:51Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "edaeedc",
+            "longId": "edaeedc00f744e38f24091dfd46bd1c496bd529c",
+            "message": "1.0.0-fix1",
+            "date": "2026-02-16T11:44:00Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "7d550b6",
+            "longId": "7d550b664af9e30986f2b39b3a45e50225a07529",
+            "message": "1.0.0(1.0.0-dev1と変更なし)",
+            "date": "2026-02-16T11:37:01Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "cc8e503",
+            "longId": "cc8e503edfe9b34e6c475befd47999534a6bf9a1",
+            "message": "1.0.0-dev1",
+            "date": "2026-02-16T11:34:58Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "fbcfea2",
+            "longId": "fbcfea205872c38d048de9cb1a51aec7f9ba206c",
+            "message": "初回コミット",
+            "date": "2026-02-16T11:24:14Z",
+            "author": "SWTBSYUT"
           }
         ]
       }

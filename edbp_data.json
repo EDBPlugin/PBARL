@@ -338,54 +338,6 @@
   },
   {
     "forkCount": 0,
-    "nameWithOwner": "appipinopi/Plugin-test",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/appipinopi/Plugin-test",
-    "manifest": null,
-    "branches": [
-      {
-        "name": "beta",
-        "commits": [
-          {
-            "shortId": "ec68e34",
-            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
-            "message": "Create README.md",
-            "date": "2026-02-12T10:04:58Z",
-            "author": "appipinopi"
-          }
-        ]
-      },
-      {
-        "name": "dev",
-        "commits": [
-          {
-            "shortId": "ec68e34",
-            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
-            "message": "Create README.md",
-            "date": "2026-02-12T10:04:58Z",
-            "author": "appipinopi"
-          }
-        ]
-      },
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "ec68e34",
-            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
-            "message": "Create README.md",
-            "date": "2026-02-12T10:04:58Z",
-            "author": "appipinopi"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
     "nameWithOwner": "appipinopi/SQL-Generator-Viewer",
     "releases": {
       "nodes": []
@@ -748,6 +700,45 @@
   },
   {
     "forkCount": 0,
+    "nameWithOwner": "grampr/easy-bdc_bettercommand",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/grampr/easy-bdc_bettercommand",
+    "manifest": {
+      "id": "bettercommand",
+      "name": "Better Command",
+      "version": "1.0.0",
+      "author": "grampr",
+      "description": "引数・説明・Choice 対応のスラッシュコマンドブロックを追加します。",
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "minAppVersion": "1.1.0",
+      "tags": [
+        "command",
+        "slash",
+        "discord",
+        "app_commands"
+      ]
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "a421733",
+            "longId": "a421733fafdfafc178f6d16bfb76638fbd5eefec",
+            "message": "v1.0.0: Better Command plugin - remove emojis from block labels",
+            "date": "2026-02-24T11:40:43Z",
+            "author": "grampr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "yuta25912/AutoGuard",
     "releases": {
       "nodes": []
@@ -795,45 +786,6 @@
             "message": "初回コミット",
             "date": "2026-02-19T22:35:01Z",
             "author": "SWTBSYUT"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "grampr/easy-bdc_bettercommand",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/grampr/easy-bdc_bettercommand",
-    "manifest": {
-      "id": "bettercommand",
-      "name": "Better Command",
-      "version": "1.0.0",
-      "author": "grampr",
-      "description": "引数・説明・Choice 対応のスラッシュコマンドブロックを追加します。",
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "minAppVersion": "1.1.0",
-      "tags": [
-        "command",
-        "slash",
-        "discord",
-        "app_commands"
-      ]
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "a421733",
-            "longId": "a421733fafdfafc178f6d16bfb76638fbd5eefec",
-            "message": "v1.0.0: Better Command plugin - remove emojis from block labels",
-            "date": "2026-02-24T11:40:43Z",
-            "author": "grampr"
           }
         ]
       }
@@ -948,6 +900,54 @@
             "message": "1.0.0-dev1",
             "date": "2026-02-16T22:22:58Z",
             "author": "SWTBSYUT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "appipinopi/Plugin-test",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/appipinopi/Plugin-test",
+    "manifest": null,
+    "branches": [
+      {
+        "name": "beta",
+        "commits": [
+          {
+            "shortId": "ec68e34",
+            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
+            "message": "Create README.md",
+            "date": "2026-02-12T10:04:58Z",
+            "author": "appipinopi"
+          }
+        ]
+      },
+      {
+        "name": "dev",
+        "commits": [
+          {
+            "shortId": "ec68e34",
+            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
+            "message": "Create README.md",
+            "date": "2026-02-12T10:04:58Z",
+            "author": "appipinopi"
+          }
+        ]
+      },
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "ec68e34",
+            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
+            "message": "Create README.md",
+            "date": "2026-02-12T10:04:58Z",
+            "author": "appipinopi"
           }
         ]
       }

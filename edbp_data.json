@@ -489,54 +489,6 @@
   },
   {
     "forkCount": 0,
-    "nameWithOwner": "appipinopi/Plugin-test",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/appipinopi/Plugin-test",
-    "manifest": null,
-    "branches": [
-      {
-        "name": "beta",
-        "commits": [
-          {
-            "shortId": "ec68e34",
-            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
-            "message": "Create README.md",
-            "date": "2026-02-12T10:04:58Z",
-            "author": "appipinopi"
-          }
-        ]
-      },
-      {
-        "name": "dev",
-        "commits": [
-          {
-            "shortId": "ec68e34",
-            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
-            "message": "Create README.md",
-            "date": "2026-02-12T10:04:58Z",
-            "author": "appipinopi"
-          }
-        ]
-      },
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "ec68e34",
-            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
-            "message": "Create README.md",
-            "date": "2026-02-12T10:04:58Z",
-            "author": "appipinopi"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
     "nameWithOwner": "yuta25912/EasyTranslate",
     "releases": {
       "nodes": []
@@ -644,6 +596,54 @@
             "message": "1.0.0-dev1",
             "date": "2026-02-16T22:22:58Z",
             "author": "SWTBSYUT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "appipinopi/Plugin-test",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/appipinopi/Plugin-test",
+    "manifest": null,
+    "branches": [
+      {
+        "name": "beta",
+        "commits": [
+          {
+            "shortId": "ec68e34",
+            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
+            "message": "Create README.md",
+            "date": "2026-02-12T10:04:58Z",
+            "author": "appipinopi"
+          }
+        ]
+      },
+      {
+        "name": "dev",
+        "commits": [
+          {
+            "shortId": "ec68e34",
+            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
+            "message": "Create README.md",
+            "date": "2026-02-12T10:04:58Z",
+            "author": "appipinopi"
+          }
+        ]
+      },
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "ec68e34",
+            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
+            "message": "Create README.md",
+            "date": "2026-02-12T10:04:58Z",
+            "author": "appipinopi"
           }
         ]
       }

@@ -352,120 +352,6 @@
   },
   {
     "forkCount": 0,
-    "nameWithOwner": "yuta25912/EasyTranslate",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/yuta25912/EasyTranslate",
-    "manifest": {
-      "id": "EasyTranslate",
-      "name": "EasyTranslate",
-      "version": "1.0.1",
-      "author": "yuta25912",
-      "minAppVersion": "1.1.0",
-      "uuid": "f585bc3a-ad59-4110-bfc6-864cf5b7324d",
-      "description": "GoogleTranslatorを利用して、テキストを様々な言語にAPIキー不要で翻訳する機能を追加します。",
-      "icon": "🌍",
-      "tags": [
-        "utility",
-        "translate"
-      ],
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "repo": "https://github.com/yuta25912/EasyTranslate",
-      "pipInstall": [
-        "deep-translator",
-        "langdetect"
-      ]
-    },
-    "branches": [
-      {
-        "name": "master",
-        "commits": [
-          {
-            "shortId": "c5701fc",
-            "longId": "c5701fca60c6c1eede90da904312d5d6a040617d",
-            "message": "1.0.0-fix12(Manifest1.1.0対応)",
-            "date": "2026-02-21T01:45:01Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "35aba1f",
-            "longId": "35aba1f004aea437a69d5d34a0993ae24ccad912",
-            "message": "1.0.0-fix11(manifest.jsonの形式アップデート2)",
-            "date": "2026-02-19T07:34:05Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "3152de2",
-            "longId": "3152de23476bef7b51a29a865b8c6ab2b9f0cc12",
-            "message": "1.0.0-fix10(数字の対応追加)",
-            "date": "2026-02-18T13:18:45Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "e69c157",
-            "longId": "e69c15702c43b4897e591a30ade7158d25b14ead",
-            "message": "1.0.0-fix9(READMEアップデート)",
-            "date": "2026-02-18T12:55:10Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "1ee62e9",
-            "longId": "1ee62e93b93865d7562ff3982d9b8f8858b75510",
-            "message": "1.0.0-fix8(翻訳のコードの修正)",
-            "date": "2026-02-18T12:30:47Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "44353a8",
-            "longId": "44353a84f67a9d3a5fc7a37bdfee42fbd22c0e31",
-            "message": "1.0.0-official(正式リリース)",
-            "date": "2026-02-18T12:18:00Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "2fd0fcf",
-            "longId": "2fd0fcf17a1d738164dcbd16758f290e3d8cf0be",
-            "message": "Add License",
-            "date": "2026-02-18T11:13:57Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "15dcbe1",
-            "longId": "15dcbe19fcb206f8178b0733933b24f43586254c",
-            "message": "1.0.0-fix7(manifest.jsonの形式アップデートのため)",
-            "date": "2026-02-18T08:42:46Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "523900e",
-            "longId": "523900eaf2cb75e0546c9b3772ae38f2d24792e4",
-            "message": "1.0.0-fix3(UUID変更)",
-            "date": "2026-02-16T22:56:43Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "b950fdf",
-            "longId": "b950fdf9f08a1c1c13388d00ee9995e3d43fa56b",
-            "message": "1.0.0-dev2(機能追加)",
-            "date": "2026-02-16T22:53:27Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "1dd6b20",
-            "longId": "1dd6b20c7797149561f9fb9e06f23422fb294bd1",
-            "message": "1.0.0-dev1",
-            "date": "2026-02-16T22:22:58Z",
-            "author": "SWTBSYUT"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
     "nameWithOwner": "appipinopi/Plugin-test",
     "releases": {
       "nodes": []
@@ -777,144 +663,113 @@
   },
   {
     "forkCount": 0,
-    "nameWithOwner": "yuta25912/AIChecker",
+    "nameWithOwner": "yuta25912/EasyTranslate",
     "releases": {
       "nodes": []
     },
     "stargazerCount": 0,
-    "url": "https://github.com/yuta25912/AIChecker",
+    "url": "https://github.com/yuta25912/EasyTranslate",
     "manifest": {
-      "id": "ai-checker",
-      "name": "AIChecker",
-      "version": "1.0.0-dev16",
+      "id": "EasyTranslate",
+      "name": "EasyTranslate",
+      "version": "1.0.1",
       "author": "yuta25912",
-      "description": "WebLLMを使用してブロックコードのレビューを行うAIアシスタントです。",
-      "affectsStyle": true,
-      "affectsBlocks": false,
-      "minAppVersion": "1.1.0"
+      "minAppVersion": "1.1.0",
+      "uuid": "f585bc3a-ad59-4110-bfc6-864cf5b7324d",
+      "description": "GoogleTranslatorを利用して、テキストを様々な言語にAPIキー不要で翻訳する機能を追加します。",
+      "icon": "🌍",
+      "tags": [
+        "utility",
+        "translate"
+      ],
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "repo": "https://github.com/yuta25912/EasyTranslate",
+      "pipInstall": [
+        "deep-translator",
+        "langdetect"
+      ]
     },
     "branches": [
       {
         "name": "master",
         "commits": [
           {
-            "shortId": "9e664ce",
-            "longId": "9e664ce565a5cda23dda12b3740b5d8a01f78157",
+            "shortId": "c5701fc",
+            "longId": "c5701fca60c6c1eede90da904312d5d6a040617d",
+            "message": "1.0.0-fix12(Manifest1.1.0対応)",
+            "date": "2026-02-21T01:45:01Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "35aba1f",
+            "longId": "35aba1f004aea437a69d5d34a0993ae24ccad912",
+            "message": "1.0.0-fix11(manifest.jsonの形式アップデート2)",
+            "date": "2026-02-19T07:34:05Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "3152de2",
+            "longId": "3152de23476bef7b51a29a865b8c6ab2b9f0cc12",
+            "message": "1.0.0-fix10(数字の対応追加)",
+            "date": "2026-02-18T13:18:45Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "e69c157",
+            "longId": "e69c15702c43b4897e591a30ade7158d25b14ead",
+            "message": "1.0.0-fix9(READMEアップデート)",
+            "date": "2026-02-18T12:55:10Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "1ee62e9",
+            "longId": "1ee62e93b93865d7562ff3982d9b8f8858b75510",
+            "message": "1.0.0-fix8(翻訳のコードの修正)",
+            "date": "2026-02-18T12:30:47Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "44353a8",
+            "longId": "44353a84f67a9d3a5fc7a37bdfee42fbd22c0e31",
+            "message": "1.0.0-official(正式リリース)",
+            "date": "2026-02-18T12:18:00Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "2fd0fcf",
+            "longId": "2fd0fcf17a1d738164dcbd16758f290e3d8cf0be",
             "message": "Add License",
-            "date": "2026-03-06T11:01:48Z",
+            "date": "2026-02-18T11:13:57Z",
             "author": "yuta25912"
           },
           {
-            "shortId": "c354147",
-            "longId": "c354147e8f58996aa24c5f2f60d9f682d88762d7",
-            "message": "1.0.0-dev16(修正)",
-            "date": "2026-02-28T10:00:07Z",
-            "author": "yuta25912"
+            "shortId": "15dcbe1",
+            "longId": "15dcbe19fcb206f8178b0733933b24f43586254c",
+            "message": "1.0.0-fix7(manifest.jsonの形式アップデートのため)",
+            "date": "2026-02-18T08:42:46Z",
+            "author": "SWTBSYUT"
           },
           {
-            "shortId": "f5f74d7",
-            "longId": "f5f74d760525decd0041f71ca2c968957dd0ef6e",
-            "message": "1.0.0-dev15(修正+α)",
-            "date": "2026-02-28T09:54:36Z",
-            "author": "yuta25912"
+            "shortId": "523900e",
+            "longId": "523900eaf2cb75e0546c9b3772ae38f2d24792e4",
+            "message": "1.0.0-fix3(UUID変更)",
+            "date": "2026-02-16T22:56:43Z",
+            "author": "SWTBSYUT"
           },
           {
-            "shortId": "114c286",
-            "longId": "114c286d16611dfe9d127dd23723ac09a6a7cd2e",
-            "message": "1.0.0-dev14(GUI修正など)",
-            "date": "2026-02-28T09:46:08Z",
-            "author": "yuta25912"
+            "shortId": "b950fdf",
+            "longId": "b950fdf9f08a1c1c13388d00ee9995e3d43fa56b",
+            "message": "1.0.0-dev2(機能追加)",
+            "date": "2026-02-16T22:53:27Z",
+            "author": "SWTBSYUT"
           },
           {
-            "shortId": "8f975bb",
-            "longId": "8f975bb681dba463fd0291a3acb1c7ceefa6175d",
-            "message": "1.0.0-dev13(プロンプト修正など)",
-            "date": "2026-02-28T09:42:26Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "706d9a1",
-            "longId": "706d9a13ba9d6074276a1e1b8d6fc05176f09885",
-            "message": "1.0.0-dev12",
-            "date": "2026-02-28T09:09:20Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "e5f8512",
-            "longId": "e5f8512955d2535af0d1498f174cb90f8ccc7c0a",
-            "message": "1.0.0-dev10",
-            "date": "2026-02-28T08:57:59Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "71ee188",
-            "longId": "71ee1889aafb5db24989d78130bc0f04de860c84",
-            "message": "1.0.0-dev9(修正)",
-            "date": "2026-02-28T08:05:37Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "46040c0",
-            "longId": "46040c0ccd28985fa4ac332a7ca3157ec9f7d635",
-            "message": "1.0.0-dev8(修正)",
-            "date": "2026-02-28T08:02:11Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "6c6e541",
-            "longId": "6c6e5418a416ed44716fbdbb492fa09c543e984a",
-            "message": "1.0.0-dev7(GUI修正)",
-            "date": "2026-02-28T07:57:01Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "b8012f3",
-            "longId": "b8012f3ce02bcba3ecaeb25f662a6efee0630ed4",
-            "message": "1.0.0-dev6",
-            "date": "2026-02-28T07:47:19Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "533be6a",
-            "longId": "533be6a464dc6d1fa06692a4725a8602e381b64f",
-            "message": "1.0.0-dev5",
-            "date": "2026-02-28T07:41:59Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "7749327",
-            "longId": "77493274343faa0524f5bfc50dfdb26241012dda",
-            "message": "1.0.0-dev4(修正)",
-            "date": "2026-02-28T07:38:13Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "478025d",
-            "longId": "478025d39fb712ed85deaec853cc432ac54d0298",
-            "message": "Update manifest version to 1.1.0",
-            "date": "2026-02-28T07:37:09Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "7f6907f",
-            "longId": "7f6907f2728795e6cb4c366bb9627adfab8ccf24",
-            "message": "Migrate to WebLLM with Gemma 2 2B",
-            "date": "2026-02-28T07:36:43Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "5afc7c3",
-            "longId": "5afc7c3261228e2068feaba2bd3992024fa005f5",
+            "shortId": "1dd6b20",
+            "longId": "1dd6b20c7797149561f9fb9e06f23422fb294bd1",
             "message": "1.0.0-dev1",
-            "date": "2026-02-28T07:31:08Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "e1e8217",
-            "longId": "e1e8217aeb91e6b7ea6a43d7e910da8b47d135a7",
-            "message": "初回コミット",
-            "date": "2026-02-28T06:40:53Z",
-            "author": "yuta25912"
+            "date": "2026-02-16T22:22:58Z",
+            "author": "SWTBSYUT"
           }
         ]
       }
@@ -1213,6 +1068,151 @@
             "message": "Initial commit",
             "date": "2026-02-08T10:58:38Z",
             "author": "appipinopi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "yuta25912/AIChecker",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/yuta25912/AIChecker",
+    "manifest": {
+      "id": "ai-checker",
+      "name": "AIChecker",
+      "version": "1.0.0-dev16",
+      "author": "yuta25912",
+      "description": "WebLLMを使用してブロックコードのレビューを行うAIアシスタントです。",
+      "affectsStyle": true,
+      "affectsBlocks": false,
+      "minAppVersion": "1.1.0"
+    },
+    "branches": [
+      {
+        "name": "master",
+        "commits": [
+          {
+            "shortId": "9e664ce",
+            "longId": "9e664ce565a5cda23dda12b3740b5d8a01f78157",
+            "message": "Add License",
+            "date": "2026-03-06T11:01:48Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "c354147",
+            "longId": "c354147e8f58996aa24c5f2f60d9f682d88762d7",
+            "message": "1.0.0-dev16(修正)",
+            "date": "2026-02-28T10:00:07Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "f5f74d7",
+            "longId": "f5f74d760525decd0041f71ca2c968957dd0ef6e",
+            "message": "1.0.0-dev15(修正+α)",
+            "date": "2026-02-28T09:54:36Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "114c286",
+            "longId": "114c286d16611dfe9d127dd23723ac09a6a7cd2e",
+            "message": "1.0.0-dev14(GUI修正など)",
+            "date": "2026-02-28T09:46:08Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "8f975bb",
+            "longId": "8f975bb681dba463fd0291a3acb1c7ceefa6175d",
+            "message": "1.0.0-dev13(プロンプト修正など)",
+            "date": "2026-02-28T09:42:26Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "706d9a1",
+            "longId": "706d9a13ba9d6074276a1e1b8d6fc05176f09885",
+            "message": "1.0.0-dev12",
+            "date": "2026-02-28T09:09:20Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "e5f8512",
+            "longId": "e5f8512955d2535af0d1498f174cb90f8ccc7c0a",
+            "message": "1.0.0-dev10",
+            "date": "2026-02-28T08:57:59Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "71ee188",
+            "longId": "71ee1889aafb5db24989d78130bc0f04de860c84",
+            "message": "1.0.0-dev9(修正)",
+            "date": "2026-02-28T08:05:37Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "46040c0",
+            "longId": "46040c0ccd28985fa4ac332a7ca3157ec9f7d635",
+            "message": "1.0.0-dev8(修正)",
+            "date": "2026-02-28T08:02:11Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "6c6e541",
+            "longId": "6c6e5418a416ed44716fbdbb492fa09c543e984a",
+            "message": "1.0.0-dev7(GUI修正)",
+            "date": "2026-02-28T07:57:01Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "b8012f3",
+            "longId": "b8012f3ce02bcba3ecaeb25f662a6efee0630ed4",
+            "message": "1.0.0-dev6",
+            "date": "2026-02-28T07:47:19Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "533be6a",
+            "longId": "533be6a464dc6d1fa06692a4725a8602e381b64f",
+            "message": "1.0.0-dev5",
+            "date": "2026-02-28T07:41:59Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "7749327",
+            "longId": "77493274343faa0524f5bfc50dfdb26241012dda",
+            "message": "1.0.0-dev4(修正)",
+            "date": "2026-02-28T07:38:13Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "478025d",
+            "longId": "478025d39fb712ed85deaec853cc432ac54d0298",
+            "message": "Update manifest version to 1.1.0",
+            "date": "2026-02-28T07:37:09Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "7f6907f",
+            "longId": "7f6907f2728795e6cb4c366bb9627adfab8ccf24",
+            "message": "Migrate to WebLLM with Gemma 2 2B",
+            "date": "2026-02-28T07:36:43Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "5afc7c3",
+            "longId": "5afc7c3261228e2068feaba2bd3992024fa005f5",
+            "message": "1.0.0-dev1",
+            "date": "2026-02-28T07:31:08Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "e1e8217",
+            "longId": "e1e8217aeb91e6b7ea6a43d7e910da8b47d135a7",
+            "message": "初回コミット",
+            "date": "2026-02-28T06:40:53Z",
+            "author": "yuta25912"
           }
         ]
       }

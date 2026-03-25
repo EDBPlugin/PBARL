@@ -526,6 +526,50 @@
   },
   {
     "forkCount": 0,
+    "nameWithOwner": "appipinopi/SQL-Generator-Viewer",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/appipinopi/SQL-Generator-Viewer",
+    "manifest": {
+      "name": "SQL Generator & Viewer",
+      "author": "EDBPlugin AI",
+      "version": "1.0.0",
+      "description": "SQLクエリの生成とリアルタイム閲覧、ヘルプ表示機能を備えた高度なプラグインです。",
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "isCustom": false,
+      "uuid": "edbp-EDBPAI-SQL",
+      "id": "sql-generator-&-viewer",
+      "updateDate": "2026-02-11",
+      "installedFrom": 0,
+      "trustLevel": null
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "de5f459",
+            "longId": "de5f459c2aaebb409f35b4da43d63990c9c69322",
+            "message": "Create plugins.js",
+            "date": "2026-02-11T13:33:32Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "5d06440",
+            "longId": "5d0644092732ccb949e0604604bf576a8d92071e",
+            "message": "Create manifest.json",
+            "date": "2026-02-11T13:32:58Z",
+            "author": "appipinopi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "yuta25912/AutoGuard",
     "releases": {
       "nodes": []
@@ -573,50 +617,6 @@
             "message": "初回コミット",
             "date": "2026-02-19T22:35:01Z",
             "author": "SWTBSYUT"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "appipinopi/SQL-Generator-Viewer",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/appipinopi/SQL-Generator-Viewer",
-    "manifest": {
-      "name": "SQL Generator & Viewer",
-      "author": "EDBPlugin AI",
-      "version": "1.0.0",
-      "description": "SQLクエリの生成とリアルタイム閲覧、ヘルプ表示機能を備えた高度なプラグインです。",
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "isCustom": false,
-      "uuid": "edbp-EDBPAI-SQL",
-      "id": "sql-generator-&-viewer",
-      "updateDate": "2026-02-11",
-      "installedFrom": 0,
-      "trustLevel": null
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "de5f459",
-            "longId": "de5f459c2aaebb409f35b4da43d63990c9c69322",
-            "message": "Create plugins.js",
-            "date": "2026-02-11T13:33:32Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "5d06440",
-            "longId": "5d0644092732ccb949e0604604bf576a8d92071e",
-            "message": "Create manifest.json",
-            "date": "2026-02-11T13:32:58Z",
-            "author": "appipinopi"
           }
         ]
       }
@@ -770,198 +770,6 @@
             "message": "1.0.0-dev1",
             "date": "2026-02-16T22:22:58Z",
             "author": "SWTBSYUT"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "appipinopi/Malicious-Test-Plugin",
-    "releases": {
-      "nodes": [
-        {
-          "name": "V1.2",
-          "publishedAt": "2026-02-18T23:53:38Z",
-          "tagName": "V1.2.0"
-        },
-        {
-          "name": "V1.1.1",
-          "publishedAt": "2026-02-15T04:49:48Z",
-          "tagName": "V1.1.1"
-        },
-        {
-          "name": "V1.1.0",
-          "publishedAt": "2026-02-15T04:46:08Z",
-          "tagName": "V1.1.0"
-        },
-        {
-          "name": "V1.0.0",
-          "publishedAt": "2026-02-11T11:13:44Z",
-          "tagName": "V1.0.0"
-        }
-      ]
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/appipinopi/Malicious-Test-Plugin",
-    "manifest": {
-      "id": "malicious-test",
-      "name": "Malicious Test Plugin",
-      "version": "1.1.0",
-      "author": "appipinopi",
-      "description": "テスト用の危険なプラグインです。有効にするとEDBPアイコンが大量発生します。",
-      "icon": "https://github.com/appipinopi/Malicious-Test-Plugin/raw/refs/heads/main/icon.svg",
-      "tags": [
-        "anti"
-      ],
-      "affectsStyle": true,
-      "affectsBlocks": false,
-      "repo": "https://github.com/appipinopi/Malicious-Test-Plugin/",
-      "minAppVersion": "1.0.0"
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "09bc90b",
-            "longId": "09bc90b045325309afef3591b2b369c111abd832",
-            "message": "Update manifest.json",
-            "date": "2026-02-18T23:52:30Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "55e2a8c",
-            "longId": "55e2a8cf8daf5eb52e7a2b4a49c6ea6d4cade0fa",
-            "message": "Update manifest.json",
-            "date": "2026-02-18T23:51:58Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "bdc9d16",
-            "longId": "bdc9d1693651eaf5f3f02b6a924dda7e910b2258",
-            "message": "Update README.md",
-            "date": "2026-02-15T04:48:48Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "f751e06",
-            "longId": "f751e06f67871b17dcf94eb7acccf8444d8d20ee",
-            "message": "Update README.md",
-            "date": "2026-02-15T04:48:24Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "dd86187",
-            "longId": "dd861871e73bab60e57941e578fdae7d906c4916",
-            "message": "Update manifest.json",
-            "date": "2026-02-15T04:45:31Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "511e246",
-            "longId": "511e246703c7fa333a8d90e7acdb728a7decdc4d",
-            "message": "Update manifest.json",
-            "date": "2026-02-15T04:45:23Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "d54d1cd",
-            "longId": "d54d1cd78b38fa00fc0cf6e7d893de7c520a8649",
-            "message": "Update manifest.json",
-            "date": "2026-02-15T04:45:11Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "0f53c04",
-            "longId": "0f53c0413eecb001bee474c1e6a752e8df94c966",
-            "message": "Update manifest.json",
-            "date": "2026-02-15T04:44:58Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "1f482ba",
-            "longId": "1f482ba709309cde949d2a24abf28d63ee570386",
-            "message": "Update plugin.js",
-            "date": "2026-02-15T04:44:26Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "f1d7bd5",
-            "longId": "f1d7bd54a2ea7330b06570c1d79ae31a2c80d1ca",
-            "message": "Add files via upload",
-            "date": "2026-02-15T04:41:02Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "c3103fd",
-            "longId": "c3103fdb675c02b90356305f121e5a002880655f",
-            "message": "Update manifest.json",
-            "date": "2026-02-12T13:31:21Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "624bc45",
-            "longId": "624bc457b8c527d7757546b75c995dd34cdad2ca",
-            "message": "Update manifest.json",
-            "date": "2026-02-12T13:30:08Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "2eeaaea",
-            "longId": "2eeaaeaf0ebb32f4e85c0fdb9ea2a86932239dcd",
-            "message": "Update plugin.js",
-            "date": "2026-02-11T11:12:15Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "c07737c",
-            "longId": "c07737cfd6e3ac54cd3b58419fb4a77ec6e59daf",
-            "message": "Update plugin.js",
-            "date": "2026-02-11T11:10:41Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "12b23c2",
-            "longId": "12b23c223645aee8843dc871dd986ce3e265fade",
-            "message": "Update plugin.js",
-            "date": "2026-02-11T11:08:37Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "51692bc",
-            "longId": "51692bc5dedd923cbf50fe3b64867f91cf5b2320",
-            "message": "Update plugin.js",
-            "date": "2026-02-11T11:02:49Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "7030269",
-            "longId": "70302695a6d4585a48b6619d83f90c03437c4c84",
-            "message": "Update plugin.js",
-            "date": "2026-02-11T11:02:31Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "9f1165c",
-            "longId": "9f1165ce5dadcffc79f3c22002ce31e79c97eab1",
-            "message": "Update and rename MARKETPLACE_INTEGRATION.md to README.md",
-            "date": "2026-02-11T11:01:33Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "1823343",
-            "longId": "1823343a539d2beebee4e98dc76c30cdab2ac49b",
-            "message": "Add files via upload",
-            "date": "2026-02-11T11:01:14Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "4ed6bdc",
-            "longId": "4ed6bdc45cef0a50f1c8ec9367d360177fadcb89",
-            "message": "Add files via upload",
-            "date": "2026-02-11T10:59:33Z",
-            "author": "appipinopi"
           }
         ]
       }
@@ -1213,6 +1021,198 @@
             "message": "初回コミット",
             "date": "2026-02-28T06:40:53Z",
             "author": "yuta25912"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "appipinopi/Malicious-Test-Plugin",
+    "releases": {
+      "nodes": [
+        {
+          "name": "V1.2",
+          "publishedAt": "2026-02-18T23:53:38Z",
+          "tagName": "V1.2.0"
+        },
+        {
+          "name": "V1.1.1",
+          "publishedAt": "2026-02-15T04:49:48Z",
+          "tagName": "V1.1.1"
+        },
+        {
+          "name": "V1.1.0",
+          "publishedAt": "2026-02-15T04:46:08Z",
+          "tagName": "V1.1.0"
+        },
+        {
+          "name": "V1.0.0",
+          "publishedAt": "2026-02-11T11:13:44Z",
+          "tagName": "V1.0.0"
+        }
+      ]
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/appipinopi/Malicious-Test-Plugin",
+    "manifest": {
+      "id": "malicious-test",
+      "name": "Malicious Test Plugin",
+      "version": "1.1.0",
+      "author": "appipinopi",
+      "description": "テスト用の危険なプラグインです。有効にするとEDBPアイコンが大量発生します。",
+      "icon": "https://github.com/appipinopi/Malicious-Test-Plugin/raw/refs/heads/main/icon.svg",
+      "tags": [
+        "anti"
+      ],
+      "affectsStyle": true,
+      "affectsBlocks": false,
+      "repo": "https://github.com/appipinopi/Malicious-Test-Plugin/",
+      "minAppVersion": "1.0.0"
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "09bc90b",
+            "longId": "09bc90b045325309afef3591b2b369c111abd832",
+            "message": "Update manifest.json",
+            "date": "2026-02-18T23:52:30Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "55e2a8c",
+            "longId": "55e2a8cf8daf5eb52e7a2b4a49c6ea6d4cade0fa",
+            "message": "Update manifest.json",
+            "date": "2026-02-18T23:51:58Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "bdc9d16",
+            "longId": "bdc9d1693651eaf5f3f02b6a924dda7e910b2258",
+            "message": "Update README.md",
+            "date": "2026-02-15T04:48:48Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "f751e06",
+            "longId": "f751e06f67871b17dcf94eb7acccf8444d8d20ee",
+            "message": "Update README.md",
+            "date": "2026-02-15T04:48:24Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "dd86187",
+            "longId": "dd861871e73bab60e57941e578fdae7d906c4916",
+            "message": "Update manifest.json",
+            "date": "2026-02-15T04:45:31Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "511e246",
+            "longId": "511e246703c7fa333a8d90e7acdb728a7decdc4d",
+            "message": "Update manifest.json",
+            "date": "2026-02-15T04:45:23Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "d54d1cd",
+            "longId": "d54d1cd78b38fa00fc0cf6e7d893de7c520a8649",
+            "message": "Update manifest.json",
+            "date": "2026-02-15T04:45:11Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "0f53c04",
+            "longId": "0f53c0413eecb001bee474c1e6a752e8df94c966",
+            "message": "Update manifest.json",
+            "date": "2026-02-15T04:44:58Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "1f482ba",
+            "longId": "1f482ba709309cde949d2a24abf28d63ee570386",
+            "message": "Update plugin.js",
+            "date": "2026-02-15T04:44:26Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "f1d7bd5",
+            "longId": "f1d7bd54a2ea7330b06570c1d79ae31a2c80d1ca",
+            "message": "Add files via upload",
+            "date": "2026-02-15T04:41:02Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "c3103fd",
+            "longId": "c3103fdb675c02b90356305f121e5a002880655f",
+            "message": "Update manifest.json",
+            "date": "2026-02-12T13:31:21Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "624bc45",
+            "longId": "624bc457b8c527d7757546b75c995dd34cdad2ca",
+            "message": "Update manifest.json",
+            "date": "2026-02-12T13:30:08Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "2eeaaea",
+            "longId": "2eeaaeaf0ebb32f4e85c0fdb9ea2a86932239dcd",
+            "message": "Update plugin.js",
+            "date": "2026-02-11T11:12:15Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "c07737c",
+            "longId": "c07737cfd6e3ac54cd3b58419fb4a77ec6e59daf",
+            "message": "Update plugin.js",
+            "date": "2026-02-11T11:10:41Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "12b23c2",
+            "longId": "12b23c223645aee8843dc871dd986ce3e265fade",
+            "message": "Update plugin.js",
+            "date": "2026-02-11T11:08:37Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "51692bc",
+            "longId": "51692bc5dedd923cbf50fe3b64867f91cf5b2320",
+            "message": "Update plugin.js",
+            "date": "2026-02-11T11:02:49Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "7030269",
+            "longId": "70302695a6d4585a48b6619d83f90c03437c4c84",
+            "message": "Update plugin.js",
+            "date": "2026-02-11T11:02:31Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "9f1165c",
+            "longId": "9f1165ce5dadcffc79f3c22002ce31e79c97eab1",
+            "message": "Update and rename MARKETPLACE_INTEGRATION.md to README.md",
+            "date": "2026-02-11T11:01:33Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "1823343",
+            "longId": "1823343a539d2beebee4e98dc76c30cdab2ac49b",
+            "message": "Add files via upload",
+            "date": "2026-02-11T11:01:14Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "4ed6bdc",
+            "longId": "4ed6bdc45cef0a50f1c8ec9367d360177fadcb89",
+            "message": "Add files via upload",
+            "date": "2026-02-11T10:59:33Z",
+            "author": "appipinopi"
           }
         ]
       }

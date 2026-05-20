@@ -1,6 +1,113 @@
 [
   {
     "forkCount": 0,
+    "nameWithOwner": "EDBPlugin/debug-editor-plugin",
+    "releases": {
+      "nodes": [
+        {
+          "name": "最新のmanifest",
+          "publishedAt": "2026-02-18T02:57:56Z",
+          "tagName": "1.3.0"
+        },
+        {
+          "name": "V1.2.0 README",
+          "publishedAt": "2026-02-08T01:59:24Z",
+          "tagName": "1.2.0"
+        },
+        {
+          "name": "V1.0.0",
+          "publishedAt": "2026-02-08T01:29:47Z",
+          "tagName": "1.0.0"
+        }
+      ]
+    },
+    "stargazerCount": 1,
+    "url": "https://github.com/EDBPlugin/debug-editor-plugin",
+    "manifest": {
+      "id": "debug-editor-plugin",
+      "name": "Debug & Internal Editor",
+      "author": "EDBPlugin",
+      "version": "1.2.0",
+      "description": "プラグインの内部コードを編集し、システムデバッグ情報を表示する開発者向けツールです。",
+      "repo": "https://github.com/EDBPlugin/debug-editor-plugin",
+      "affectsStyle": false,
+      "affectsBlocks": false,
+      "isCustom": true,
+      "minAppVersion": "1.0.0"
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "7254302",
+            "longId": "72543027901071383e4aac7c7dbcc01fc5a732c8",
+            "message": "Update manifest.json",
+            "date": "2026-02-18T02:49:04Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "5f90d40",
+            "longId": "5f90d407063f3b6b22aeeb56e5f80f14d3d92b2b",
+            "message": "Create README.md",
+            "date": "2026-02-08T02:04:51Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "11891f4",
+            "longId": "11891f4639e477aa8c54c7adb5f74cd41cd6695b",
+            "message": "Update plugin.js",
+            "date": "2026-02-08T02:04:34Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "c1488fe",
+            "longId": "c1488fe274ac9a50eeb3ee54f6e9d403b669c4b9",
+            "message": "Update manifest.json",
+            "date": "2026-02-08T02:04:12Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "440c4e3",
+            "longId": "440c4e308f61e1bc59fefe8a424fa2f1769dfda7",
+            "message": "Update manifest.json",
+            "date": "2026-02-08T01:59:48Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "0e3f948",
+            "longId": "0e3f948481889735f760546f758008439b360ea6",
+            "message": "Update plugin.js",
+            "date": "2026-02-08T01:56:13Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "fb739eb",
+            "longId": "fb739ebc1d7de963d480a7180ebd9ae629afb503",
+            "message": "Update manifest.json",
+            "date": "2026-02-08T01:55:46Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "ae000fd",
+            "longId": "ae000fd167dfa22c8918ac6df0680698deef323e",
+            "message": "Implement Debug & Internal Editor Plugin",
+            "date": "2026-02-08T01:27:03Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "12a1e99",
+            "longId": "12a1e99550e41376b43afdacab5cd62d1718d94b",
+            "message": "Create manifest.json",
+            "date": "2026-02-08T01:26:37Z",
+            "author": "appipinopi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "himais0giiiin/secure-token-setting",
     "releases": {
       "nodes": [
@@ -151,113 +258,6 @@
     ]
   },
   {
-    "forkCount": 0,
-    "nameWithOwner": "EDBPlugin/debug-editor-plugin",
-    "releases": {
-      "nodes": [
-        {
-          "name": "最新のmanifest",
-          "publishedAt": "2026-02-18T02:57:56Z",
-          "tagName": "1.3.0"
-        },
-        {
-          "name": "V1.2.0 README",
-          "publishedAt": "2026-02-08T01:59:24Z",
-          "tagName": "1.2.0"
-        },
-        {
-          "name": "V1.0.0",
-          "publishedAt": "2026-02-08T01:29:47Z",
-          "tagName": "1.0.0"
-        }
-      ]
-    },
-    "stargazerCount": 1,
-    "url": "https://github.com/EDBPlugin/debug-editor-plugin",
-    "manifest": {
-      "id": "debug-editor-plugin",
-      "name": "Debug & Internal Editor",
-      "author": "EDBPlugin",
-      "version": "1.2.0",
-      "description": "プラグインの内部コードを編集し、システムデバッグ情報を表示する開発者向けツールです。",
-      "repo": "https://github.com/EDBPlugin/debug-editor-plugin",
-      "affectsStyle": false,
-      "affectsBlocks": false,
-      "isCustom": true,
-      "minAppVersion": "1.0.0"
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "7254302",
-            "longId": "72543027901071383e4aac7c7dbcc01fc5a732c8",
-            "message": "Update manifest.json",
-            "date": "2026-02-18T02:49:04Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "5f90d40",
-            "longId": "5f90d407063f3b6b22aeeb56e5f80f14d3d92b2b",
-            "message": "Create README.md",
-            "date": "2026-02-08T02:04:51Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "11891f4",
-            "longId": "11891f4639e477aa8c54c7adb5f74cd41cd6695b",
-            "message": "Update plugin.js",
-            "date": "2026-02-08T02:04:34Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "c1488fe",
-            "longId": "c1488fe274ac9a50eeb3ee54f6e9d403b669c4b9",
-            "message": "Update manifest.json",
-            "date": "2026-02-08T02:04:12Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "440c4e3",
-            "longId": "440c4e308f61e1bc59fefe8a424fa2f1769dfda7",
-            "message": "Update manifest.json",
-            "date": "2026-02-08T01:59:48Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "0e3f948",
-            "longId": "0e3f948481889735f760546f758008439b360ea6",
-            "message": "Update plugin.js",
-            "date": "2026-02-08T01:56:13Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "fb739eb",
-            "longId": "fb739ebc1d7de963d480a7180ebd9ae629afb503",
-            "message": "Update manifest.json",
-            "date": "2026-02-08T01:55:46Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "ae000fd",
-            "longId": "ae000fd167dfa22c8918ac6df0680698deef323e",
-            "message": "Implement Debug & Internal Editor Plugin",
-            "date": "2026-02-08T01:27:03Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "12a1e99",
-            "longId": "12a1e99550e41376b43afdacab5cd62d1718d94b",
-            "message": "Create manifest.json",
-            "date": "2026-02-08T01:26:37Z",
-            "author": "appipinopi"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "forkCount": 1,
     "nameWithOwner": "himais0giiiin/KEITO-Cloud-Deployer",
     "releases": {
@@ -345,120 +345,6 @@
             "message": "first commit",
             "date": "2026-02-17T13:25:48Z",
             "author": "himais0giiiin"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "yuta25912/EasyTranslate",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/yuta25912/EasyTranslate",
-    "manifest": {
-      "id": "EasyTranslate",
-      "name": "EasyTranslate",
-      "version": "1.0.1",
-      "author": "yuta25912",
-      "minAppVersion": "1.1.0",
-      "uuid": "f585bc3a-ad59-4110-bfc6-864cf5b7324d",
-      "description": "GoogleTranslatorを利用して、テキストを様々な言語にAPIキー不要で翻訳する機能を追加します。",
-      "icon": "🌍",
-      "tags": [
-        "utility",
-        "translate"
-      ],
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "repo": "https://github.com/yuta25912/EasyTranslate",
-      "pipInstall": [
-        "deep-translator",
-        "langdetect"
-      ]
-    },
-    "branches": [
-      {
-        "name": "master",
-        "commits": [
-          {
-            "shortId": "c5701fc",
-            "longId": "c5701fca60c6c1eede90da904312d5d6a040617d",
-            "message": "1.0.0-fix12(Manifest1.1.0対応)",
-            "date": "2026-02-21T01:45:01Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "35aba1f",
-            "longId": "35aba1f004aea437a69d5d34a0993ae24ccad912",
-            "message": "1.0.0-fix11(manifest.jsonの形式アップデート2)",
-            "date": "2026-02-19T07:34:05Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "3152de2",
-            "longId": "3152de23476bef7b51a29a865b8c6ab2b9f0cc12",
-            "message": "1.0.0-fix10(数字の対応追加)",
-            "date": "2026-02-18T13:18:45Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "e69c157",
-            "longId": "e69c15702c43b4897e591a30ade7158d25b14ead",
-            "message": "1.0.0-fix9(READMEアップデート)",
-            "date": "2026-02-18T12:55:10Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "1ee62e9",
-            "longId": "1ee62e93b93865d7562ff3982d9b8f8858b75510",
-            "message": "1.0.0-fix8(翻訳のコードの修正)",
-            "date": "2026-02-18T12:30:47Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "44353a8",
-            "longId": "44353a84f67a9d3a5fc7a37bdfee42fbd22c0e31",
-            "message": "1.0.0-official(正式リリース)",
-            "date": "2026-02-18T12:18:00Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "2fd0fcf",
-            "longId": "2fd0fcf17a1d738164dcbd16758f290e3d8cf0be",
-            "message": "Add License",
-            "date": "2026-02-18T11:13:57Z",
-            "author": "yuta25912"
-          },
-          {
-            "shortId": "15dcbe1",
-            "longId": "15dcbe19fcb206f8178b0733933b24f43586254c",
-            "message": "1.0.0-fix7(manifest.jsonの形式アップデートのため)",
-            "date": "2026-02-18T08:42:46Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "523900e",
-            "longId": "523900eaf2cb75e0546c9b3772ae38f2d24792e4",
-            "message": "1.0.0-fix3(UUID変更)",
-            "date": "2026-02-16T22:56:43Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "b950fdf",
-            "longId": "b950fdf9f08a1c1c13388d00ee9995e3d43fa56b",
-            "message": "1.0.0-dev2(機能追加)",
-            "date": "2026-02-16T22:53:27Z",
-            "author": "SWTBSYUT"
-          },
-          {
-            "shortId": "1dd6b20",
-            "longId": "1dd6b20c7797149561f9fb9e06f23422fb294bd1",
-            "message": "1.0.0-dev1",
-            "date": "2026-02-16T22:22:58Z",
-            "author": "SWTBSYUT"
           }
         ]
       }
@@ -585,54 +471,6 @@
             "message": "初回コミット",
             "date": "2026-02-16T11:24:14Z",
             "author": "SWTBSYUT"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "appipinopi/Plugin-test",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/appipinopi/Plugin-test",
-    "manifest": null,
-    "branches": [
-      {
-        "name": "beta",
-        "commits": [
-          {
-            "shortId": "ec68e34",
-            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
-            "message": "Create README.md",
-            "date": "2026-02-12T10:04:58Z",
-            "author": "appipinopi"
-          }
-        ]
-      },
-      {
-        "name": "dev",
-        "commits": [
-          {
-            "shortId": "ec68e34",
-            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
-            "message": "Create README.md",
-            "date": "2026-02-12T10:04:58Z",
-            "author": "appipinopi"
-          }
-        ]
-      },
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "ec68e34",
-            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
-            "message": "Create README.md",
-            "date": "2026-02-12T10:04:58Z",
-            "author": "appipinopi"
           }
         ]
       }
@@ -1070,6 +908,54 @@
   },
   {
     "forkCount": 0,
+    "nameWithOwner": "appipinopi/Plugin-test",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/appipinopi/Plugin-test",
+    "manifest": null,
+    "branches": [
+      {
+        "name": "beta",
+        "commits": [
+          {
+            "shortId": "ec68e34",
+            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
+            "message": "Create README.md",
+            "date": "2026-02-12T10:04:58Z",
+            "author": "appipinopi"
+          }
+        ]
+      },
+      {
+        "name": "dev",
+        "commits": [
+          {
+            "shortId": "ec68e34",
+            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
+            "message": "Create README.md",
+            "date": "2026-02-12T10:04:58Z",
+            "author": "appipinopi"
+          }
+        ]
+      },
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "ec68e34",
+            "longId": "ec68e345401514f2a5318b5363346193d9d01e5a",
+            "message": "Create README.md",
+            "date": "2026-02-12T10:04:58Z",
+            "author": "appipinopi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "appipinopi/SQL-Generator-Viewer",
     "releases": {
       "nodes": []
@@ -1107,6 +993,120 @@
             "message": "Create manifest.json",
             "date": "2026-02-11T13:32:58Z",
             "author": "appipinopi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
+    "nameWithOwner": "yuta25912/EasyTranslate",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/yuta25912/EasyTranslate",
+    "manifest": {
+      "id": "EasyTranslate",
+      "name": "EasyTranslate",
+      "version": "1.0.1",
+      "author": "yuta25912",
+      "minAppVersion": "1.1.0",
+      "uuid": "f585bc3a-ad59-4110-bfc6-864cf5b7324d",
+      "description": "GoogleTranslatorを利用して、テキストを様々な言語にAPIキー不要で翻訳する機能を追加します。",
+      "icon": "🌍",
+      "tags": [
+        "utility",
+        "translate"
+      ],
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "repo": "https://github.com/yuta25912/EasyTranslate",
+      "pipInstall": [
+        "deep-translator",
+        "langdetect"
+      ]
+    },
+    "branches": [
+      {
+        "name": "master",
+        "commits": [
+          {
+            "shortId": "c5701fc",
+            "longId": "c5701fca60c6c1eede90da904312d5d6a040617d",
+            "message": "1.0.0-fix12(Manifest1.1.0対応)",
+            "date": "2026-02-21T01:45:01Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "35aba1f",
+            "longId": "35aba1f004aea437a69d5d34a0993ae24ccad912",
+            "message": "1.0.0-fix11(manifest.jsonの形式アップデート2)",
+            "date": "2026-02-19T07:34:05Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "3152de2",
+            "longId": "3152de23476bef7b51a29a865b8c6ab2b9f0cc12",
+            "message": "1.0.0-fix10(数字の対応追加)",
+            "date": "2026-02-18T13:18:45Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "e69c157",
+            "longId": "e69c15702c43b4897e591a30ade7158d25b14ead",
+            "message": "1.0.0-fix9(READMEアップデート)",
+            "date": "2026-02-18T12:55:10Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "1ee62e9",
+            "longId": "1ee62e93b93865d7562ff3982d9b8f8858b75510",
+            "message": "1.0.0-fix8(翻訳のコードの修正)",
+            "date": "2026-02-18T12:30:47Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "44353a8",
+            "longId": "44353a84f67a9d3a5fc7a37bdfee42fbd22c0e31",
+            "message": "1.0.0-official(正式リリース)",
+            "date": "2026-02-18T12:18:00Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "2fd0fcf",
+            "longId": "2fd0fcf17a1d738164dcbd16758f290e3d8cf0be",
+            "message": "Add License",
+            "date": "2026-02-18T11:13:57Z",
+            "author": "yuta25912"
+          },
+          {
+            "shortId": "15dcbe1",
+            "longId": "15dcbe19fcb206f8178b0733933b24f43586254c",
+            "message": "1.0.0-fix7(manifest.jsonの形式アップデートのため)",
+            "date": "2026-02-18T08:42:46Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "523900e",
+            "longId": "523900eaf2cb75e0546c9b3772ae38f2d24792e4",
+            "message": "1.0.0-fix3(UUID変更)",
+            "date": "2026-02-16T22:56:43Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "b950fdf",
+            "longId": "b950fdf9f08a1c1c13388d00ee9995e3d43fa56b",
+            "message": "1.0.0-dev2(機能追加)",
+            "date": "2026-02-16T22:53:27Z",
+            "author": "SWTBSYUT"
+          },
+          {
+            "shortId": "1dd6b20",
+            "longId": "1dd6b20c7797149561f9fb9e06f23422fb294bd1",
+            "message": "1.0.0-dev1",
+            "date": "2026-02-16T22:22:58Z",
+            "author": "SWTBSYUT"
           }
         ]
       }

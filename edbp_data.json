@@ -1,6 +1,113 @@
 [
   {
     "forkCount": 0,
+    "nameWithOwner": "EDBPlugin/debug-editor-plugin",
+    "releases": {
+      "nodes": [
+        {
+          "name": "最新のmanifest",
+          "publishedAt": "2026-02-18T02:57:56Z",
+          "tagName": "1.3.0"
+        },
+        {
+          "name": "V1.2.0 README",
+          "publishedAt": "2026-02-08T01:59:24Z",
+          "tagName": "1.2.0"
+        },
+        {
+          "name": "V1.0.0",
+          "publishedAt": "2026-02-08T01:29:47Z",
+          "tagName": "1.0.0"
+        }
+      ]
+    },
+    "stargazerCount": 1,
+    "url": "https://github.com/EDBPlugin/debug-editor-plugin",
+    "manifest": {
+      "id": "debug-editor-plugin",
+      "name": "Debug & Internal Editor",
+      "author": "EDBPlugin",
+      "version": "1.2.0",
+      "description": "プラグインの内部コードを編集し、システムデバッグ情報を表示する開発者向けツールです。",
+      "repo": "https://github.com/EDBPlugin/debug-editor-plugin",
+      "affectsStyle": false,
+      "affectsBlocks": false,
+      "isCustom": true,
+      "minAppVersion": "1.0.0"
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "7254302",
+            "longId": "72543027901071383e4aac7c7dbcc01fc5a732c8",
+            "message": "Update manifest.json",
+            "date": "2026-02-18T02:49:04Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "5f90d40",
+            "longId": "5f90d407063f3b6b22aeeb56e5f80f14d3d92b2b",
+            "message": "Create README.md",
+            "date": "2026-02-08T02:04:51Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "11891f4",
+            "longId": "11891f4639e477aa8c54c7adb5f74cd41cd6695b",
+            "message": "Update plugin.js",
+            "date": "2026-02-08T02:04:34Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "c1488fe",
+            "longId": "c1488fe274ac9a50eeb3ee54f6e9d403b669c4b9",
+            "message": "Update manifest.json",
+            "date": "2026-02-08T02:04:12Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "440c4e3",
+            "longId": "440c4e308f61e1bc59fefe8a424fa2f1769dfda7",
+            "message": "Update manifest.json",
+            "date": "2026-02-08T01:59:48Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "0e3f948",
+            "longId": "0e3f948481889735f760546f758008439b360ea6",
+            "message": "Update plugin.js",
+            "date": "2026-02-08T01:56:13Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "fb739eb",
+            "longId": "fb739ebc1d7de963d480a7180ebd9ae629afb503",
+            "message": "Update manifest.json",
+            "date": "2026-02-08T01:55:46Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "ae000fd",
+            "longId": "ae000fd167dfa22c8918ac6df0680698deef323e",
+            "message": "Implement Debug & Internal Editor Plugin",
+            "date": "2026-02-08T01:27:03Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "12a1e99",
+            "longId": "12a1e99550e41376b43afdacab5cd62d1718d94b",
+            "message": "Create manifest.json",
+            "date": "2026-02-08T01:26:37Z",
+            "author": "appipinopi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "himais0giiiin/secure-token-setting",
     "releases": {
       "nodes": [
@@ -145,113 +252,6 @@
             "message": "first commit",
             "date": "2026-02-08T12:50:55Z",
             "author": "himais0giiiin"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "EDBPlugin/debug-editor-plugin",
-    "releases": {
-      "nodes": [
-        {
-          "name": "最新のmanifest",
-          "publishedAt": "2026-02-18T02:57:56Z",
-          "tagName": "1.3.0"
-        },
-        {
-          "name": "V1.2.0 README",
-          "publishedAt": "2026-02-08T01:59:24Z",
-          "tagName": "1.2.0"
-        },
-        {
-          "name": "V1.0.0",
-          "publishedAt": "2026-02-08T01:29:47Z",
-          "tagName": "1.0.0"
-        }
-      ]
-    },
-    "stargazerCount": 1,
-    "url": "https://github.com/EDBPlugin/debug-editor-plugin",
-    "manifest": {
-      "id": "debug-editor-plugin",
-      "name": "Debug & Internal Editor",
-      "author": "EDBPlugin",
-      "version": "1.2.0",
-      "description": "プラグインの内部コードを編集し、システムデバッグ情報を表示する開発者向けツールです。",
-      "repo": "https://github.com/EDBPlugin/debug-editor-plugin",
-      "affectsStyle": false,
-      "affectsBlocks": false,
-      "isCustom": true,
-      "minAppVersion": "1.0.0"
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "7254302",
-            "longId": "72543027901071383e4aac7c7dbcc01fc5a732c8",
-            "message": "Update manifest.json",
-            "date": "2026-02-18T02:49:04Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "5f90d40",
-            "longId": "5f90d407063f3b6b22aeeb56e5f80f14d3d92b2b",
-            "message": "Create README.md",
-            "date": "2026-02-08T02:04:51Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "11891f4",
-            "longId": "11891f4639e477aa8c54c7adb5f74cd41cd6695b",
-            "message": "Update plugin.js",
-            "date": "2026-02-08T02:04:34Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "c1488fe",
-            "longId": "c1488fe274ac9a50eeb3ee54f6e9d403b669c4b9",
-            "message": "Update manifest.json",
-            "date": "2026-02-08T02:04:12Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "440c4e3",
-            "longId": "440c4e308f61e1bc59fefe8a424fa2f1769dfda7",
-            "message": "Update manifest.json",
-            "date": "2026-02-08T01:59:48Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "0e3f948",
-            "longId": "0e3f948481889735f760546f758008439b360ea6",
-            "message": "Update plugin.js",
-            "date": "2026-02-08T01:56:13Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "fb739eb",
-            "longId": "fb739ebc1d7de963d480a7180ebd9ae629afb503",
-            "message": "Update manifest.json",
-            "date": "2026-02-08T01:55:46Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "ae000fd",
-            "longId": "ae000fd167dfa22c8918ac6df0680698deef323e",
-            "message": "Implement Debug & Internal Editor Plugin",
-            "date": "2026-02-08T01:27:03Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "12a1e99",
-            "longId": "12a1e99550e41376b43afdacab5cd62d1718d94b",
-            "message": "Create manifest.json",
-            "date": "2026-02-08T01:26:37Z",
-            "author": "appipinopi"
           }
         ]
       }
@@ -992,6 +992,50 @@
   },
   {
     "forkCount": 0,
+    "nameWithOwner": "appipinopi/SQL-Generator-Viewer",
+    "releases": {
+      "nodes": []
+    },
+    "stargazerCount": 0,
+    "url": "https://github.com/appipinopi/SQL-Generator-Viewer",
+    "manifest": {
+      "name": "SQL Generator & Viewer",
+      "author": "EDBPlugin AI",
+      "version": "1.0.0",
+      "description": "SQLクエリの生成とリアルタイム閲覧、ヘルプ表示機能を備えた高度なプラグインです。",
+      "affectsStyle": false,
+      "affectsBlocks": true,
+      "isCustom": false,
+      "uuid": "edbp-EDBPAI-SQL",
+      "id": "sql-generator-&-viewer",
+      "updateDate": "2026-02-11",
+      "installedFrom": 0,
+      "trustLevel": null
+    },
+    "branches": [
+      {
+        "name": "main",
+        "commits": [
+          {
+            "shortId": "de5f459",
+            "longId": "de5f459c2aaebb409f35b4da43d63990c9c69322",
+            "message": "Create plugins.js",
+            "date": "2026-02-11T13:33:32Z",
+            "author": "appipinopi"
+          },
+          {
+            "shortId": "5d06440",
+            "longId": "5d0644092732ccb949e0604604bf576a8d92071e",
+            "message": "Create manifest.json",
+            "date": "2026-02-11T13:32:58Z",
+            "author": "appipinopi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "forkCount": 0,
     "nameWithOwner": "yuta25912/AIChecker",
     "releases": {
       "nodes": []
@@ -1130,50 +1174,6 @@
             "message": "初回コミット",
             "date": "2026-02-28T06:40:53Z",
             "author": "yuta25912"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "forkCount": 0,
-    "nameWithOwner": "appipinopi/SQL-Generator-Viewer",
-    "releases": {
-      "nodes": []
-    },
-    "stargazerCount": 0,
-    "url": "https://github.com/appipinopi/SQL-Generator-Viewer",
-    "manifest": {
-      "name": "SQL Generator & Viewer",
-      "author": "EDBPlugin AI",
-      "version": "1.0.0",
-      "description": "SQLクエリの生成とリアルタイム閲覧、ヘルプ表示機能を備えた高度なプラグインです。",
-      "affectsStyle": false,
-      "affectsBlocks": true,
-      "isCustom": false,
-      "uuid": "edbp-EDBPAI-SQL",
-      "id": "sql-generator-&-viewer",
-      "updateDate": "2026-02-11",
-      "installedFrom": 0,
-      "trustLevel": null
-    },
-    "branches": [
-      {
-        "name": "main",
-        "commits": [
-          {
-            "shortId": "de5f459",
-            "longId": "de5f459c2aaebb409f35b4da43d63990c9c69322",
-            "message": "Create plugins.js",
-            "date": "2026-02-11T13:33:32Z",
-            "author": "appipinopi"
-          },
-          {
-            "shortId": "5d06440",
-            "longId": "5d0644092732ccb949e0604604bf576a8d92071e",
-            "message": "Create manifest.json",
-            "date": "2026-02-11T13:32:58Z",
-            "author": "appipinopi"
           }
         ]
       }
